@@ -1,0 +1,67 @@
+﻿<Window x:Class="TPV_WINDOWS.Vista.VentanaPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TPV_WINDOWS.Vista"
+        mc:Ignorable="d"
+        Title="Pantalla de ventas" Height="768" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="712,31,0,407" SelectionChanged="ListBox_SelectionChanged" HorizontalAlignment="Left" Width="216"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="907,31,0,407" SelectionChanged="ListBox_SelectionChanged" HorizontalAlignment="Left" Width="107"/>
+        <TabControl RenderTransformOrigin="0.5,0.5" Margin="1,1,323,2">
+            <TabControl.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.024"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TabControl.RenderTransform>
+            <TabItem x:Name="tab1" Header="Auriculares">
+                <Grid Background="#FFE5E5E5" Margin="0,0,3,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="18*"/>
+                        <ColumnDefinition Width="701*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="3,8,0,0" VerticalAlignment="Top" Width="100" Source="/Vista/testlcd.webp" Grid.ColumnSpan="2"/>
+                    <Image Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="97,8,0,0" VerticalAlignment="Top" Width="100" Source="/Vista/test3.jpg"/>
+                    <Image Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="207,11,0,0" VerticalAlignment="Top" Width="100" Source="/Vista/testlcd.webp"/>
+                    <Image Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="319,11,0,0" VerticalAlignment="Top" Width="100" Source="/Vista/test3.jpg"/>
+                    <Image Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="431,11,0,0" VerticalAlignment="Top" Width="100" Source="/Vista/testlcd.webp"/>
+                    <Image Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="546,14,0,0" VerticalAlignment="Top" Width="100" Source="/Vista/test3.jpg"/>
+                    <Image Grid.Column="1" HorizontalAlignment="Left" Height="130" Margin="1,117,0,0" VerticalAlignment="Top" Width="102" Source="/Vista/testlcd.webp" Grid.ColumnSpan="2"/>
+                    <Image Grid.Column="2" HorizontalAlignment="Left" Height="130" Margin="95,117,0,0" VerticalAlignment="Top" Width="101" Source="/Vista/test3.jpg"/>
+                    <Image Grid.Column="2" HorizontalAlignment="Left" Height="130" Margin="206,121,0,0" VerticalAlignment="Top" Width="102" Source="/Vista/testlcd.webp"/>
+                    <Image Grid.Column="2" HorizontalAlignment="Left" Height="130" Margin="320,121,0,0" VerticalAlignment="Top" Width="101" Source="/Vista/test3.jpg"/>
+                    <Image Grid.Column="2" HorizontalAlignment="Left" Height="130" Margin="436,119,0,0" VerticalAlignment="Top" Width="102" Source="/Vista/testlcd.webp"/>
+                    <Image Grid.Column="2" HorizontalAlignment="Left" Height="130" Margin="550,122,0,0" VerticalAlignment="Top" Width="101" Source="/Vista/test3.jpg"/>
+                    <Image Grid.Column="1" HorizontalAlignment="Left" Height="130" Margin="3,228,0,0" VerticalAlignment="Top" Width="101" Source="/Vista/test3.jpg" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tab2" Header="Amplificadores" HorizontalAlignment="Left" Margin="-2,-2,0,0" Width="95">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-6,0"/>
+            </TabItem>
+            <TabItem x:Name="tab3" Header="DACs"/>
+            <TabItem Header="Accesorios"/>
+            <TabItem Header="Ofertas/descuentos"/>
+        </TabControl>
+        <Button Content="Cobrar" HorizontalAlignment="Left" Margin="724,393,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="Button_Click" FontSize="13"/>
+        <Button Content="Borrar línea" HorizontalAlignment="Left" Margin="867,393,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="Button_Click" FontSize="13"/>
+        <Label Content="Producto" HorizontalAlignment="Left" Margin="712,5,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.238,0.368"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="907,5,0,0" VerticalAlignment="Top"/>
+        <Label Content="Total:" HorizontalAlignment="Left" Margin="846,342,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="12000€" HorizontalAlignment="Left" Margin="933,342,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button Content="Funciones&#xA;Encargado" HorizontalAlignment="Left" Margin="867,451,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="Button_Click" FontSize="13"/>
+        <Button Content="Bloquear pantalla" HorizontalAlignment="Left" Margin="724,451,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="Button_Click_1" FontSize="13"/>
+        <Button Content="ACCIONES" HorizontalAlignment="Left" Margin="724,515,0,0" VerticalAlignment="Top" Height="48" Width="271" Click="Button_Click_1" FontSize="13"/>
+        <Image Margin="788,617,103,21" Source="/Vista/profile.png" Stretch="Fill">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Label Content="Johnny Mentero" HorizontalAlignment="Left" Margin="785,578,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Red"/>
+
+    </Grid>
+</Window>
