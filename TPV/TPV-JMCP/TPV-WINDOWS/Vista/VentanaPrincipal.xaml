@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TPV_WINDOWS.Vista"
         mc:Ignorable="d"
-        Title="Pantalla de ventas" Height="768" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Pantalla de ventas" Height="768" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid>
         <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="712,31,0,407" SelectionChanged="ListBox_SelectionChanged" HorizontalAlignment="Left" Width="216"/>
         <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="907,31,0,407" SelectionChanged="ListBox_SelectionChanged" HorizontalAlignment="Left" Width="107"/>

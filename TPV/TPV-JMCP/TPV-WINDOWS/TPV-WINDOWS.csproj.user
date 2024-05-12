@@ -10,6 +10,9 @@
     <Compile Update="Vista\VentanaAcciones.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Vista\VentanaEncargado.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Vista\VentanaPrincipal.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\VentanaAcciones.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vista\VentanaEncargado.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\VentanaPrincipal.xaml">

@@ -5,11 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TPV_WINDOWS.Vista"
         mc:Ignorable="d"
-        Title="VentanaAcciones" Height="210" Width="800"Width="224">
-    <Grid Margin="0,0,0,3">
-        <GroupBox Header="Mi usuario" Margin="16,46,72,19" RenderTransformOrigin="0.853,1.32">
-            <Button Content="Mi perfil" HorizontalAlignment="Left" Margin="491,0,0,0" VerticalAlignment="Top" Height="32" Width="67" RenderTransformOrigin="-5.54,2.213"/>
-        </GroupBox>
+        Title="VentanaAcciones" Width="257" Height="233">
+    <Grid Margin="0,0,10,7">
+        <GroupBox Header="Mi usuario" Margin="16,46,17,15" RenderTransformOrigin="0.853,1.32"/>
         <Button Content="Volver" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="24" Width="58" Panel.ZIndex="1"/>
         <Button Content="Mi perfil" HorizontalAlignment="Left" Margin="34,71,0,0" VerticalAlignment="Top" Height="32" Width="67" Panel.ZIndex="1"/>
         <Button Content="Mi interfaz" HorizontalAlignment="Left" Margin="34,121,0,0" VerticalAlignment="Top" Height="32" Width="67" Panel.ZIndex="1"/>

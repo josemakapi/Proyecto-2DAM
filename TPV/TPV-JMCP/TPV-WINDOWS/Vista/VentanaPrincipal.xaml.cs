@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TPV_WINDOWS.Controlador;
 
 namespace TPV_WINDOWS.Vista
 {
@@ -19,14 +20,12 @@ namespace TPV_WINDOWS.Vista
     /// </summary>
     public partial class VentanaPrincipal : Window
     {
+        private TPVBase controlador;
         public VentanaPrincipal()
         {
             InitializeComponent();
-            Modelo.TPVMaster procesoMaster = new Modelo.TPVMaster();
-            //procesoMaster.Iniciar();
-            VentanaTecladoNumericoUsuario tecladoWindow = new VentanaTecladoNumericoUsuario();
-            this.Show();
-            //tecladoWindow.ShowDialog();
+            controlador = new TPVBase();
+            controlador.InicioTPV();
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -44,6 +43,11 @@ namespace TPV_WINDOWS.Vista
             VentanaAcciones ventanaAcciones = new VentanaAcciones();
             this.Show();
             ventanaAcciones.ShowDialog();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            controlador.FinTPV();
         }
     }
 }

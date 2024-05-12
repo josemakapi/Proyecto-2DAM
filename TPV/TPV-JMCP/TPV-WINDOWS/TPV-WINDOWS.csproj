@@ -22,16 +22,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Datos\" />
     <Folder Include="Imagenes\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Vista\exit.png" />
-    <Resource Include="Vista\profile.png" />
-    <Resource Include="Vista\test2.png" />
-    <Resource Include="Vista\test3.jpg" />
-    <Resource Include="Vista\testlcd.webp" />
+    <Resource Include="Recursos\Imagenes\exit.png" />
+    <Resource Include="Recursos\Imagenes\profile.png" />
+    <Resource Include="Recursos\Imagenes\test2.png" />
+    <Resource Include="Recursos\Imagenes\test3.jpg" />
+    <Resource Include="Recursos\Imagenes\testlcd.webp" />
   </ItemGroup>
 
 </Project>
