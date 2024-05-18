@@ -11,9 +11,9 @@ namespace TPV_WINDOWS.Modelo
         private int _id;
         public int Id { get { return _id; } }
         private string _nombre;
-        public string Nombre { get { return _nombre; } set { _nombre = value; } }
+        public string Nombre { get => _nombre; set => _nombre = value; } 
         private string _dni;
-        public string Dni { get { return _dni; } }
+        public string Dni { get => _dni; } 
 
         public Cliente(int id, string nombre, string dni)
         {

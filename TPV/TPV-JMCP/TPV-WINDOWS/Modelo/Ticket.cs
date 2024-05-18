@@ -9,11 +9,9 @@ namespace TPV_WINDOWS.Modelo
     public class Ticket
     {
         private string _numTicket;
-        private string _rid;
         private string _numTPV;
 
         public string NumTicket { get { return _numTicket; } set {  _numTicket = value; } }
-        public string Rid { get { return _rid; } }
         public string NumTPV { get { return _numTPV; } set { _numTPV = value; } }
 
 
@@ -21,12 +19,8 @@ namespace TPV_WINDOWS.Modelo
         public Ticket(string numTicket)
         {
             this._numTicket = numTicket;
-            _rid = rid;
-        }
-
-        private string creaRID()
-        {
 
         }
+
     }
 }

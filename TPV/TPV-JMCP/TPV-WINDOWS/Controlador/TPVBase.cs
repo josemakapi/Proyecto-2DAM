@@ -7,28 +7,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TPV_WINDOWS.Datos;
+using TPV_WINDOWS.Modelo;
 using TPV_WINDOWS.Vista;
 
 namespace TPV_WINDOWS.Controlador
 {
     public class TPVBase
     {
-        
-        private BD miBD;
+        private TPV _tpvCFG;
+        private BDMongo? _miBD;
         private bool isTPVMaster = true; //Esto se define a mano desde aquí. Determina si esta TPV es Master
         private TPVMaster? procesoMaster=null;
         private VentanaTecladoNumericoUsuario tecladoWindow = new VentanaTecladoNumericoUsuario();
+        private Tarifa _tarifaActual;
 
         public void InicioTPV()
         {
-            MessageBox.Show("Hemos cargado TPVBase");
             if (isTPVMaster) { 
                 procesoMaster = new Controlador.TPVMaster();
                 procesoMaster.Iniciar();
             }
 
-
+            MessageBox.Show("Hemos cargado TPVBase");
             BloqueaTPV();
+            
         }
 
         public bool FinTPV()
@@ -54,6 +56,11 @@ namespace TPV_WINDOWS.Controlador
         public bool CompruebaCierre()
         {
             return true;
+        }
+
+        public void GeneraTicket()
+        {
+            
         }
     }
 }

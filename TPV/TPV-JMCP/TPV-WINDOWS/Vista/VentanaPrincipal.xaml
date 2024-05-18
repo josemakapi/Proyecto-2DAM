@@ -47,7 +47,7 @@
             <TabItem Header="Accesorios"/>
             <TabItem Header="Ofertas/descuentos"/>
         </TabControl>
-        <Button Content="Cobrar" HorizontalAlignment="Left" Margin="724,393,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="Button_Click" FontSize="13"/>
+        <Button x:Name="btnCobrar" Content="Cobrar" HorizontalAlignment="Left" Margin="724,393,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="btnCobrar_Click" FontSize="13"/>
         <Button Content="Borrar línea" HorizontalAlignment="Left" Margin="867,393,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="Button_Click" FontSize="13"/>
         <Label Content="Producto" HorizontalAlignment="Left" Margin="712,5,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.238,0.368"/>
         <Label Content="Precio" HorizontalAlignment="Left" Margin="907,5,0,0" VerticalAlignment="Top"/>

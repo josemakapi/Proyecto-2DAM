@@ -93,5 +93,6 @@ namespace TPV_WINDOWS.Datos
             catch (Exception ex) { }
             return ticket;
         }
+        
     }
 }

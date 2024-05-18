@@ -20,12 +20,10 @@ namespace TPV_WINDOWS.Vista
     /// </summary>
     public partial class VentanaPrincipal : Window
     {
-        private TPVBase controlador;
         public VentanaPrincipal()
         {
             InitializeComponent();
-            controlador = new TPVBase();
-            controlador.InicioTPV();
+            ControladorComun.IniciarPrograma();
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -33,10 +31,6 @@ namespace TPV_WINDOWS.Vista
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -47,7 +41,12 @@ namespace TPV_WINDOWS.Vista
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            controlador.FinTPV();
+            ControladorComun.DetenerPrograma();
+        }
+
+        private void btnCobrar_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorComun.TpvBase!.GeneraTicket();
         }
     }
 }
