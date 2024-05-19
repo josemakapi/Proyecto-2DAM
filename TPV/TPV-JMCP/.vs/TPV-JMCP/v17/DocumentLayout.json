@@ -3,60 +3,24 @@
   "WorkspaceRootPath": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\datos\\bdmongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\datos\\bdmongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\controlador\\tpvmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\controlador\\tpvmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\tienda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\tienda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\controlador\\controladorcomun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\controlador\\controladorcomun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\controlador\\tpvbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\controlador\\tpvbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\datos\\bd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\datos\\bd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\datos\\bdmongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\datos\\bdmongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\tarifa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\tarifa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\vista\\ventanaacciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\vista\\ventanaacciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\vista\\ventanaprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\vista\\ventanaprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\vista\\ventanaencargado.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\vista\\ventanaencargado.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\vista\\ventanaencargado.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\vista\\ventanaencargado.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\vista\\ventanatecladonumericousuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\vista\\ventanatecladonumericousuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\vista\\ventanaprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\vista\\ventanaprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\lineapantalla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\lineapantalla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,16 +31,52 @@
       "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\tpv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\vista\\ventanatecladonumericousuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\vista\\ventanatecladonumericousuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\posicionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\posicionventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\vista\\ventanaprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\vista\\ventanaprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\controlador\\tpvmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\controlador\\tpvmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\vista\\ventanaprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\vista\\ventanaprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\datos\\bd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\datos\\bd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\tienda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\tienda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\vista\\ventanaacciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\vista\\ventanaacciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|c:\\proyecto 2dam\\tpv\\tpv-jmcp\\tpv-windows\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D2F1AF-2370-44F1-A4E6-B4AD31936704}|TPV-WINDOWS\\TPV-WINDOWS.csproj|solutionrelative:tpv-windows\\modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,8 +86,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControladorComun.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Controlador\\ControladorComun.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Controlador\\ControladorComun.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Controlador\\ControladorComun.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Controlador\\ControladorComun.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T18:24:32.006Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BDMongo.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Datos\\BDMongo.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Datos\\BDMongo.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Datos\\BDMongo.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Datos\\BDMongo.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAIwCkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T10:33:16.057Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PosicionVenta.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\PosicionVenta.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\PosicionVenta.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\PosicionVenta.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Modelo\\PosicionVenta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T08:31:37.652Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -97,46 +138,112 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BDMongo.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Datos\\BDMongo.cs",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Datos\\BDMongo.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Datos\\BDMongo.cs",
-              "RelativeToolTip": "TPV-WINDOWS\\Datos\\BDMongo.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBYAAAAjAAAA",
+              "Title": "TPVBase.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Controlador\\TPVBase.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Controlador\\TPVBase.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Controlador\\TPVBase.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Controlador\\TPVBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T10:33:16.057Z",
+              "WhenOpened": "2024-05-04T08:22:29.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TPVMaster.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Controlador\\TPVMaster.cs",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Controlador\\TPVMaster.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Controlador\\TPVMaster.cs",
-              "RelativeToolTip": "TPV-WINDOWS\\Controlador\\TPVMaster.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAANAAAA",
+              "DocumentIndex": 3,
+              "Title": "Tarifa.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Tarifa.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\Tarifa.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Tarifa.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Modelo\\Tarifa.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T14:54:12.104Z",
+              "WhenOpened": "2024-05-18T15:28:24.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VentanaAcciones.xaml",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaAcciones.xaml",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Vista\\VentanaAcciones.xaml",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaAcciones.xaml",
-              "RelativeToolTip": "TPV-WINDOWS\\Vista\\VentanaAcciones.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-19T17:41:52.641Z",
+              "DocumentIndex": 4,
+              "Title": "LineaPantalla.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\LineaPantalla.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\LineaPantalla.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\LineaPantalla.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Modelo\\LineaPantalla.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T12:50:40.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "VentanaPrincipal.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaPrincipal.xaml.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Vista\\VentanaPrincipal.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaPrincipal.xaml.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Vista\\VentanaPrincipal.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T12:47:32.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\App.xaml",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\App.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\App.xaml",
+              "RelativeToolTip": "TPV-WINDOWS\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-18T12:44:54.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\App.xaml.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\App.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\App.xaml.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T12:44:04.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BD.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Datos\\BD.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Datos\\BD.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Datos\\BD.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Datos\\BD.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAADwv1cAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T16:26:15.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "VentanaPrincipal.xaml",
               "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaPrincipal.xaml",
               "RelativeDocumentMoniker": "TPV-WINDOWS\\Vista\\VentanaPrincipal.xaml",
@@ -148,46 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TPVBase.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Controlador\\TPVBase.cs",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Controlador\\TPVBase.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Controlador\\TPVBase.cs",
-              "RelativeToolTip": "TPV-WINDOWS\\Controlador\\TPVBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:22:29.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BD.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Datos\\BD.cs",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Datos\\BD.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Datos\\BD.cs",
-              "RelativeToolTip": "TPV-WINDOWS\\Datos\\BD.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAADwv1cAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T16:26:15.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Tienda.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Tienda.cs",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\Tienda.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Tienda.cs",
-              "RelativeToolTip": "TPV-WINDOWS\\Modelo\\Tienda.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T08:23:37.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "Ticket.cs",
               "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Ticket.cs",
               "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\Ticket.cs",
@@ -195,97 +263,85 @@
               "RelativeToolTip": "TPV-WINDOWS\\Modelo\\Ticket.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T17:23:39.062Z",
+              "WhenOpened": "2024-05-02T17:23:39.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Producto.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\Producto.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Producto.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Modelo\\Producto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T10:52:12.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "TPV.cs",
               "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\TPV.cs",
               "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\TPV.cs",
               "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\TPV.cs",
               "RelativeToolTip": "TPV-WINDOWS\\Modelo\\TPV.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T12:27:33.762Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "VentanaTecladoNumericoUsuario.xaml.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaTecladoNumericoUsuario.xaml.cs",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Vista\\VentanaTecladoNumericoUsuario.xaml.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaTecladoNumericoUsuario.xaml.cs",
-              "RelativeToolTip": "TPV-WINDOWS\\Vista\\VentanaTecladoNumericoUsuario.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
+              "DocumentIndex": 9,
+              "Title": "TPVMaster.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Controlador\\TPVMaster.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Controlador\\TPVMaster.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Controlador\\TPVMaster.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Controlador\\TPVMaster.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T16:56:26.608Z",
+              "WhenOpened": "2024-05-12T14:54:12.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Tienda.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Tienda.cs",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\Tienda.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Tienda.cs",
+              "RelativeToolTip": "TPV-WINDOWS\\Modelo\\Tienda.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T08:23:37.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "VentanaAcciones.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaAcciones.xaml",
+              "RelativeDocumentMoniker": "TPV-WINDOWS\\Vista\\VentanaAcciones.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaAcciones.xaml",
+              "RelativeToolTip": "TPV-WINDOWS\\Vista\\VentanaAcciones.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-19T17:41:52.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VentanaEncargado.xaml.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaEncargado.xaml.cs",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Vista\\VentanaEncargado.xaml.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaEncargado.xaml.cs",
-              "RelativeToolTip": "TPV-WINDOWS\\Vista\\VentanaEncargado.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T17:28:59.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Cliente.cs",
               "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\Cliente.cs",
               "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Cliente.cs",
               "RelativeToolTip": "TPV-WINDOWS\\Modelo\\Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T10:52:58.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T10:52:58.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "VentanaPrincipal.xaml.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaPrincipal.xaml.cs",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Vista\\VentanaPrincipal.xaml.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaPrincipal.xaml.cs",
-              "RelativeToolTip": "TPV-WINDOWS\\Vista\\VentanaPrincipal.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAIBJwB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T19:31:04.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VentanaEncargado.xaml",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaEncargado.xaml",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Vista\\VentanaEncargado.xaml",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaEncargado.xaml",
-              "RelativeToolTip": "TPV-WINDOWS\\Vista\\VentanaEncargado.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-25T17:01:16.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Usuario.cs",
               "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\Usuario.cs",
@@ -293,66 +349,7 @@
               "RelativeToolTip": "TPV-WINDOWS\\Modelo\\Usuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T12:06:26.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Producto.cs",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Modelo\\Producto.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Modelo\\Producto.cs",
-              "RelativeToolTip": "TPV-WINDOWS\\Modelo\\Producto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T10:52:12.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "VentanaTecladoNumericoUsuario.xaml",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaTecladoNumericoUsuario.xaml",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\Vista\\VentanaTecladoNumericoUsuario.xaml",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Vista\\VentanaTecladoNumericoUsuario.xaml",
-              "RelativeToolTip": "TPV-WINDOWS\\Vista\\VentanaTecladoNumericoUsuario.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-10T16:09:05.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\App.xaml",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\App.xaml",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\App.xaml",
-              "RelativeToolTip": "TPV-WINDOWS\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-10T16:01:06.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\App.xaml.cs",
-              "RelativeDocumentMoniker": "TPV-WINDOWS\\App.xaml.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\App.xaml.cs",
-              "RelativeToolTip": "TPV-WINDOWS\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T15:37:20.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T12:06:26.257Z"
             }
           ]
         }

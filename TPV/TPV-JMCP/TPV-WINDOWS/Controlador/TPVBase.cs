@@ -15,11 +15,14 @@ namespace TPV_WINDOWS.Controlador
     public class TPVBase
     {
         private TPV _tpvCFG;
-        private BDMongo? _miBD;
+        //private BDMongo? _bd;
+        //public BDMongo? BD { get => _bd; set => _bd = value; }
         private bool isTPVMaster = true; //Esto se define a mano desde aquí. Determina si esta TPV es Master
         private TPVMaster? procesoMaster=null;
         private VentanaTecladoNumericoUsuario tecladoWindow = new VentanaTecladoNumericoUsuario();
-        private Tarifa _tarifaActual;
+        private Tarifa? _tarifaActual;
+        private PosicionVenta? _posicionVentaActual;
+        public PosicionVenta? PosicionVentaActual { get => _posicionVentaActual; set => _posicionVentaActual = value; }
 
         public void InicioTPV()
         {
@@ -27,10 +30,15 @@ namespace TPV_WINDOWS.Controlador
                 procesoMaster = new Controlador.TPVMaster();
                 procesoMaster.Iniciar();
             }
-
+            this._tarifaActual = ControladorComun.ListaTarifas!.FirstOrDefault(t => t.Id == _tpvCFG.TarifaDefecto)!;
             MessageBox.Show("Hemos cargado TPVBase");
             BloqueaTPV();
             
+        }
+
+        public bool GeneraTicket()
+        {
+            return true;
         }
 
         public bool FinTPV()
@@ -58,9 +66,5 @@ namespace TPV_WINDOWS.Controlador
             return true;
         }
 
-        public void GeneraTicket()
-        {
-            
-        }
     }
 }

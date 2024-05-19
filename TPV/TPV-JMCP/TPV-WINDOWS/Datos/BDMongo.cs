@@ -25,6 +25,9 @@ namespace TPV_WINDOWS.Datos
         private string _password;
         public string Password { get => _password; set => _password = value; }
 
+
+        
+
         public BDMongo(string host, int port, string username, string password)
         {
             this._host = host;
@@ -32,6 +35,27 @@ namespace TPV_WINDOWS.Datos
             this._username = username;
             this._password = password;
             this._connectionString = $"mongodb://{this._username}:{this._password}@{this._host}:{this._port}/?connectTimeoutMS=5000&socketTimeoutMS=5000&maxIdleTimeMS=5000";
+
+            
+        }
+
+        public bool CompruebaConexionCloudTest()
+        {
+            const string connectionUri = "mongodb+srv://josemankapi:EAIJwykKmFJZe9mz@cluster0.zxd0ycl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+            var settings = MongoClientSettings.FromConnectionString(connectionUri);
+            settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+            var client = new MongoClient(settings);
+            try
+            {
+                var result = client.GetDatabase("admin").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
+                Console.WriteLine("Pinged your deployment. You successfully connected to MongoDB!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return false;
+            }
+            return true;
         }
 
         public bool ConectarBD()
@@ -62,7 +86,7 @@ namespace TPV_WINDOWS.Datos
             }
         }
 
-        public List<T> LeerObjetos<T>()
+        public List<T> LeerObjetosTipo<T>()
         {
             try
             {
@@ -75,13 +99,48 @@ namespace TPV_WINDOWS.Datos
             }
         }
 
-        public List<T> LeerObjetos<T>(string propiedad, string valor)
+
+
+        public List<T> BuscarObjeto<T>(T objeto, string nombreCampoClave)
+        {
+            try
+            {
+                IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
+                FilterDefinition<T> filter = Builders<T>.Filter.Eq(nombreCampoClave, objeto.GetType().GetProperty(nombreCampoClave)?.GetValue(objeto));
+                return collection.Find(filter).ToList();
+            }
+            catch (Exception)
+            {
+                return new List<T>();
+            }
+        }
+
+        public List<T> BuscarObjetos<T>(string propiedad, string valor)
         {
             try
             {
                 IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
                 FilterDefinition<T> filter = Builders<T>.Filter.Eq(propiedad, valor);
                 return collection.Find(filter).ToList();
+            }
+            catch (Exception)
+            {
+                return new List<T>();
+            }
+        }
+
+        public List<T> LeerObjetosTest<T>(List<T> objetos, string propiedad)
+        {
+            try
+            {
+                IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
+                List<T> listaObjetos = new List<T>();
+                foreach (T objeto in objetos)
+                {
+                    FilterDefinition<T> filter = Builders<T>.Filter.Eq(propiedad, objeto!.GetType().GetProperty(propiedad)?.GetValue(objeto));
+                    listaObjetos.Add(collection.Find(filter).FirstOrDefault());
+                }
+                return listaObjetos;
             }
             catch (Exception)
             {

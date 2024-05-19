@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TPV-WINDOWS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+107cc752001cb4dc653022800baa1819fc078aa1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f74fa840c3fdf069fede65005e86d10688f6b49e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TPV-WINDOWS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TPV-WINDOWS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
