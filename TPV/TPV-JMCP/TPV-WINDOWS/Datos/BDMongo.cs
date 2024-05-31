@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Core.Configuration;
+using TPV_WINDOWS.Modelo;
 
 namespace TPV_WINDOWS.Datos
 {
@@ -39,33 +42,45 @@ namespace TPV_WINDOWS.Datos
             
         }
 
-        public bool CompruebaConexionCloudTest()
-        {
-            const string connectionUri = "mongodb+srv://josemankapi:EAIJwykKmFJZe9mz@cluster0.zxd0ycl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-            var settings = MongoClientSettings.FromConnectionString(connectionUri);
-            settings.ServerApi = new ServerApi(ServerApiVersion.V1);
-            var client = new MongoClient(settings);
-            try
-            {
-                var result = client.GetDatabase("admin").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
-                Console.WriteLine("Pinged your deployment. You successfully connected to MongoDB!");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-                return false;
-            }
-            return true;
-        }
+        //public bool CompruebaConexionCloudTest()
+        //{
+        //    const string connectionUri = "mongodb+srv://josemankapi:EAIJwykKmFJZe9mz@cluster0.zxd0ycl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+        //    var settings = MongoClientSettings.FromConnectionString(connectionUri);
+        //    settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+        //    var client = new MongoClient(settings);
+        //    try
+        //    {
+        //        var result = client.GetDatabase("admin").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
+        //        Console.WriteLine("Pinged your deployment. You successfully connected to MongoDB!");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex);
+        //        return false;
+        //    }
+        //    return true;
+        //}
 
-        public bool ConectarBD()
+        public bool ConectarBD(string dbName)
         {
             try
             {
                 this._clienteDB = new MongoClient(this._connectionString);
-                this._dbTPV = this._clienteDB.GetDatabase("TPV-JMCP-TIENDA00");
-                //dbTPV.RunCommandAsync((Command<BsonDocument>)"{ping:1}").Wait();
-                return true;
+                this._dbTPV = this._clienteDB.GetDatabase(dbName);
+                return IsBDConnected();
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool IsBDConnected()
+        {
+            try
+            {
+                var result = _dbTPV!.RunCommand<BsonDocument>(new BsonDocument("ping", 1));
+                return result.Contains("ok") && result["ok"].ToDouble() == 1.0;
             }
             catch (Exception)
             {
@@ -106,7 +121,7 @@ namespace TPV_WINDOWS.Datos
             try
             {
                 IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
-                FilterDefinition<T> filter = Builders<T>.Filter.Eq(nombreCampoClave, objeto.GetType().GetProperty(nombreCampoClave)?.GetValue(objeto));
+                FilterDefinition<T> filter = Builders<T>.Filter.Eq(nombreCampoClave, objeto!.GetType().GetProperty(nombreCampoClave)?.GetValue(objeto));
                 return collection.Find(filter).ToList();
             }
             catch (Exception)
@@ -115,7 +130,35 @@ namespace TPV_WINDOWS.Datos
             }
         }
 
-        public List<T> BuscarObjetos<T>(string propiedad, string valor)
+        public List<T> BuscarObjetosString<T>(string propiedad, string valor)
+        {
+            try
+            {
+                IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
+                FilterDefinition<T> filter = Builders<T>.Filter.Eq(propiedad, valor);
+                return collection.Find(filter).ToList();
+            }
+            catch (Exception)
+            {
+                return new List<T>();
+            }
+        }
+
+        public List<T> BuscarObjetosBool<T>(string propiedad, bool valor)
+        {
+            try
+            {
+                IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
+                FilterDefinition<T> filter = Builders<T>.Filter.Eq(propiedad, valor);
+                return collection.Find(filter).ToList();
+            }
+            catch (Exception)
+            {
+                return new List<T>();
+            }
+        }
+
+        public List<T> BuscarObjetosInt<T>(string propiedad, int valor)
         {
             try
             {
@@ -177,6 +220,86 @@ namespace TPV_WINDOWS.Datos
                 return false;
             }
         }
+        public int SelectMAXInt(string nombreClase, string nombreMiembroPrivado)
+        {
+            try
+            {
+                IMongoCollection<BsonDocument> collection = this._dbTPV!.GetCollection<BsonDocument>(nombreClase);
+                var sort = Builders<BsonDocument>.Sort.Descending(nombreMiembroPrivado);
+                var document = collection.Find(new BsonDocument()).Project(Builders<BsonDocument>.Projection.Include(nombreMiembroPrivado)).Sort(sort).FirstOrDefault();
+                if (document != null)
+                {
+                    return document.GetValue(nombreMiembroPrivado).AsInt32;
+                }
+            }
+            catch (Exception)
+            {
+                return -1;
+            }
+            return 0;
+        }
+        public string SelectMAXTicketT(int _ejercicio, int _numTienda)
+        {
+            try
+            {
+                IMongoCollection<Ticket> collection = this._dbTPV!.GetCollection<Ticket>(typeof(Ticket).Name);
+                var filterBuilder = Builders<Ticket>.Filter;
+                //var filter = filterBuilder.Eq("_ejercicio", _ejercicio) & filterBuilder.Eq("_tienda", _numTienda) & filterBuilder.Regex("_numTicket", new BsonRegularExpression("^T\\d+$"));
+                var filter = filterBuilder.Eq("_ejercicio", _ejercicio) & filterBuilder.Eq("_tienda", _numTienda);
+                var sort = Builders<Ticket>.Sort.Descending("_numTicket");
+                var document = collection.Find(filter).Project(Builders<Ticket>.Projection.Include("_numTicket")).Sort(sort).FirstOrDefault();
+                if (document != null)
+                {
+                    return document.GetElement("_numTicket").Value.AsString;
+                }
+            }
+            catch (Exception)
+            {
+                return string.Empty;
+            }
+            return string.Empty;
+        }
+
+        public bool DesconectarBD()
+        {
+            try
+            {
+                this._clienteDB = null;
+            }
+            catch (Exception) { return false; }
+            return true;
+        }
+        public int ContarObjetos<T>()
+        {
+            try
+            {
+                IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
+                return (int)collection.CountDocuments(new BsonDocument());
+            }
+            catch (Exception)
+            {
+                return -1;
+            }
+        }
+
+        //public string SelectMAXTicketT(string ejercicio, string numTienda)
+        //{
+        //    var filter = Builders<Ticket>.Filter.And(
+        //        Builders<Ticket>.Filter.Eq(t => t.Ejercicio, ejercicio),
+        //        Builders<Ticket>.Filter.Eq(t => t.NumTicket, numTienda),
+        //        Builders<Ticket>.Filter.Regex(t => t.NumTicket, new BsonRegularExpression("^T\\d+$"))
+        //    );
+
+        //    var maxNum = _ticketCollection
+        //        .Find(filter)
+        //        .ToList()
+        //        .Select(t => int.Parse(t._numTicket.Substring(1))) // Convierte la parte numérica a int
+        //        .DefaultIfEmpty(0) // Maneja el caso en que no haya resultados
+        //        .Max();
+
+        //    return $"T{maxNum}";
+        //}
+
 
 
     }

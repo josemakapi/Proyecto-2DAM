@@ -48,12 +48,12 @@
             <TabItem Header="Ofertas/descuentos"/>
         </TabControl>
         <Button x:Name="btnCobrar" Content="Cobrar" HorizontalAlignment="Left" Margin="724,393,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="btnCobrar_Click" FontSize="13"/>
-        <Button Content="Borrar línea" HorizontalAlignment="Left" Margin="867,393,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="Button_Click" FontSize="13"/>
+        <Button Content="Borrar línea" HorizontalAlignment="Left" Margin="867,393,0,0" VerticalAlignment="Top" Height="48" Width="128" FontSize="13"/>
         <Label Content="Producto" HorizontalAlignment="Left" Margin="712,5,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.238,0.368"/>
         <Label Content="Precio" HorizontalAlignment="Left" Margin="907,5,0,0" VerticalAlignment="Top"/>
         <Label Content="Total:" HorizontalAlignment="Left" Margin="846,342,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="12000€" HorizontalAlignment="Left" Margin="933,342,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Button Content="Funciones&#xA;Encargado" HorizontalAlignment="Left" Margin="867,451,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="Button_Click" FontSize="13"/>
+        <Button x:Name="btnFuncEnc" Content="Funciones&#xA;Encargado" HorizontalAlignment="Left" Margin="867,451,0,0" VerticalAlignment="Top" Height="48" Width="128" FontSize="13" Click="btnFuncEnc_Click"/>
         <Button Content="Bloquear pantalla" HorizontalAlignment="Left" Margin="724,451,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="Button_Click_1" FontSize="13"/>
         <Button Content="ACCIONES" HorizontalAlignment="Left" Margin="724,515,0,0" VerticalAlignment="Top" Height="48" Width="271" Click="Button_Click_1" FontSize="13"/>
         <Image Margin="788,617,103,21" Source="/Vista/profile.png" Stretch="Fill">
@@ -62,6 +62,7 @@
             </Image.Effect>
         </Image>
         <Label Content="Johnny Mentero" HorizontalAlignment="Left" Margin="785,578,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Red"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="930,695,0,0" VerticalAlignment="Top" FontSize="14" Height="31" Width="62" RenderTransformOrigin="0.548,-0.194" Click="btnSalir_Click"/>
 
     </Grid>
 </Window>

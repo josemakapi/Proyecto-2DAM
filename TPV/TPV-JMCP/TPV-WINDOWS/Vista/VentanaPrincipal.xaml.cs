@@ -23,7 +23,7 @@ namespace TPV_WINDOWS.Vista
         public VentanaPrincipal()
         {
             InitializeComponent();
-            ControladorComun.IniciarPrograma();
+            //ControladorComun.IniciarPrograma();
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -41,12 +41,23 @@ namespace TPV_WINDOWS.Vista
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            ControladorComun.DetenerPrograma();
+            ControladorComun.CerrarPrograma();
         }
 
         private void btnCobrar_Click(object sender, RoutedEventArgs e)
         {
             ControladorComun.TpvBase!.GeneraTicket();
         }
+
+        private void btnFuncEnc_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorComun.TpvBase!.InsertarProductoTest();
+        }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorComun.CerrarPrograma();
+        }
+
     }
 }

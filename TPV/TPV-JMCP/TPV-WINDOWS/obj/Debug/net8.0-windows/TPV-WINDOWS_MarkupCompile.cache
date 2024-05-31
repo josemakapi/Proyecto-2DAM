@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\App.xaml
-5-1783402320
+6-1772481326
 
-15-1455241750
-199-770818012
-MainWindow.xaml;Vista\VentanaAcciones.xaml;Vista\VentanaEncargado.xaml;Vista\VentanaPrincipal.xaml;Vista\VentanaTecladoNumericoUsuario.xaml;
+251868609162
+209-1881235411
+MainWindow_old.xaml;Vista\VentanaAcciones.xaml;Vista\VentanaEncargado.xaml;Vista\VentanaPreInicio.xaml;Vista\VentanaPrincipal.xaml;Vista\VentanaTecladoNumericoUsuario.xaml;
 
-True
+False
 

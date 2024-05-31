@@ -53,7 +53,7 @@ namespace TPV_WINDOWS.Vista {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TPV-WINDOWS;V1.0.0.0;component/vista/ventanaacciones.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TPV-WINDOWS;component/vista/ventanaacciones.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vista\VentanaAcciones.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

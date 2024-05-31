@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TPV_WINDOWS.Controlador;
 using System.Windows.Media.Imaging;
 
 namespace TPV_WINDOWS.Modelo
@@ -19,7 +20,18 @@ namespace TPV_WINDOWS.Modelo
         public string? Descripcion { get { return _descripcion; } set { _descripcion = value; } }
         private BitmapImage? _imagen;
         public BitmapImage? Imagen { get { return _imagen; } set { _imagen = value; } }
+        private string? _seccion;
+        public string? Seccion { get { return _seccion; } set { _seccion = value; } }
+        private string? _subseccion;
+        public string? Subseccion { get { return _subseccion; } set { _subseccion = value; } }
 
+
+        public Producto(string nombre, double precio)
+        {
+            _id = ControladorComun.BD!.SelectMAXInt("Producto", "_id") + 1;
+            _nombre = nombre;
+            _precio = precio;
+        }
         public Producto(int id, string nombre, double precio)
         {
             _id = id;

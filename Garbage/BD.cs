@@ -73,26 +73,29 @@ namespace TPV_WINDOWS.Datos
 
             }
         }
+        
 
-        public Ticket GetTicket(String numTicket)
-        {
-            Ticket ticket = null;
-            ticket = new Ticket(numTicket);
-            try
-            {
-                List<Ticket> list = new List<Ticket>();
-                List<ODocument> list2 = new List<ODocument>();
-                //ticket = _db.Select().From("Ticket").Where("NumTicket").Equals(numTicket).ToList().Select(doc => new Ticket
-                //{
-                //    NumTicket = doc.GetField<string>("NumTicket")
-                //});
-                list2 = _db.Select().From("Ticket").Where("NumTicket").Equals(numTicket).ToList();
-                list = list2.Select(x => x.GetField<Ticket>("NumTicket")).ToList();
-                return ticket;
-            }
-            catch (Exception ex) { }
-            return ticket;
-        }
+        //public Ticket GetTicket(String numTicket)
+        //{
+        //    Ticket ticket = null;
+        //    ticket = new Ticket(numTicket);
+        //    try
+        //    {
+        //        List<Ticket> list = new List<Ticket>();
+        //        List<ODocument> list2 = new List<ODocument>();
+        //        //ticket = _db.Select().From("Ticket").Where("NumTicket").Equals(numTicket).ToList().Select(doc => new Ticket
+        //        //{
+        //        //    NumTicket = doc.GetField<string>("NumTicket")
+        //        //});
+        //        list2 = _db.Select().From("Ticket").Where("NumTicket").Equals(numTicket).ToList();
+        //        list = list2.Select(x => x.GetField<Ticket>("NumTicket")).ToList();
+        //        return ticket;
+        //    }
+        //    catch (Exception ex) { }
+        //    return ticket;
+        //}
+
+
         
     }
 }

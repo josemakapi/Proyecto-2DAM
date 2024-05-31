@@ -13,7 +13,7 @@ namespace TPV_WINDOWS.Controlador
     public class TPVMaster
     {
         private bool _isRunning;
-        private Thread? _hilo;
+        private Thread? _hiloCliente;
         private TcpListener? _tcpListener;
         // Semáforo para controlar la zona crítica
         private SemaphoreSlim _bloqueo = new SemaphoreSlim(1, 1);
@@ -72,8 +72,8 @@ namespace TPV_WINDOWS.Controlador
                     MessageBox.Show("Cliente conectado");
 
                     // Procesar el cliente
-                    Thread hiloCliente = new Thread(async () => await ProcesarCliente(_cliente));
-                    hiloCliente.Start();
+                    _hiloCliente = new Thread(async () => await ProcesarCliente(_cliente));
+                    _hiloCliente.Start();
                 }
                 catch (InvalidOperationException) { return -2; }
                 catch (Exception)
@@ -100,7 +100,7 @@ namespace TPV_WINDOWS.Controlador
                 try
                 {
                     // Cifrar el número de ticket más alto antes de enviarlo
-                    string lastTicketNum = "Aquí debería ir el número de ticket";
+                    string lastTicketNum = ControladorComun.BD!.SelectMAXTicketT(2024,1);
                     byte[] data = Encoding.UTF8.GetBytes(lastTicketNum);
                     byte[] encryptedData = EncryptData(data, _claveCompartida); //Aquí encriptamos los datos
 
