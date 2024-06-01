@@ -7,14 +7,14 @@ using TPV_WINDOWS.Controlador;
 
 namespace TPV_WINDOWS.Modelo
 {
-    public class TPV
+    public class TPV  //Se persiste
     {
         private int _id;
         public int Id { get => _id; }
         private int _numTPV;
         public int NumTPV { get => _numTPV; set => _numTPV = value; }
         private bool _isTPVMaster;
-        public bool IsTPVMaster { get => _isTPVMaster; }
+        public bool IsTPVMaster { get => _isTPVMaster; set => _isTPVMaster = value; }
         private int _codTienda;
         public int CodTienda { get => _codTienda; set => _codTienda = value; }
         private int tarifaDefecto;

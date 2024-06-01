@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TPV_WINDOWS.Vista"
         mc:Ignorable="d"
-        Title="VentanaPreInicio" Height="450" Width="800">
+        Title="VentanaPreInicio" Height="450" Width="800" Closing="Window_Closing">
     <Grid Margin="1,0,-1,0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="263*"/>
-            <ColumnDefinition Width="537*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="773*"/>
         </Grid.ColumnDefinitions>
-        <GroupBox x:Name="grpBD" Header="Conexión BD" Margin="67,24,140,285" Visibility="Visible" Grid.ColumnSpan="2">
+        <GroupBox x:Name="grpBD" Header="Conexión BD" Margin="67,24,94,285" Visibility="Visible" Grid.Column="1">
             <!--Collapsed para invisible-->
-            <Grid>
+            <Grid HorizontalAlignment="Left" Width="637" Margin="23,0,0,0">
                 <Label Content="Host" Width="80" Margin="52,14,449,62"/>
                 <TextBox x:Name="txtBHost" HorizontalAlignment="Left" Margin="52,0,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Center" Width="120"/>
                 <Label Content="Puerto" Width="80" Margin="200,14,301,62"/>
@@ -24,15 +24,14 @@
                 <Label Content="Contraseña" Width="80" Margin="392,14,109,62"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="btnConectar" Content="Conectar" HorizontalAlignment="Left" Margin="61,158,0,0" VerticalAlignment="Top" Height="25" Width="76" Click="btnConectar_Click" Grid.Column="1"/>
+        <Button x:Name="btnConectar" Content="Conectar" HorizontalAlignment="Left" Margin="335,154,0,0" VerticalAlignment="Top" Height="25" Width="76" Click="btnConectar_Click" Grid.Column="1"/>
 
-        <GroupBox x:Name="grpTienda" Header="Seleccione tienda" Margin="67,231,140,86" Grid.ColumnSpan="2">
-
+        <GroupBox x:Name="grpTienda" Header="Seleccione tienda" Margin="67,217,94,84" Grid.Column="1">
             <Grid>
-                <ComboBox x:Name="cmbBTiendas" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Width="168" ItemsSource="{Binding Tiendas}"  DisplayMemberPath="Descripcion"/>
+                <ComboBox x:Name="cmbBTiendas" Margin="186,31,188,0" VerticalAlignment="Top" ItemsSource="{Binding Tiendas}" DisplayMemberPath="Descripcion"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="btnTienda" Content="Confirmar tienda" HorizontalAlignment="Left" Margin="45,355,0,0" VerticalAlignment="Top" Height="25" Width="108" RenderTransformOrigin="0.472,0.602" Click="btnTienda_Click" Grid.Column="1"/>
+        <Button x:Name="btnTienda" Content="Confirmar tienda" HorizontalAlignment="Left" Margin="319,355,0,0" VerticalAlignment="Top" Height="25" Width="108" RenderTransformOrigin="0.472,0.602" Click="btnTienda_Click" Grid.Column="1"/>
 
     </Grid>
 </Window>

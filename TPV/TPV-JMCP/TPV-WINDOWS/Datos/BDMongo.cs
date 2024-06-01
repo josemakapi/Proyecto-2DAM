@@ -144,6 +144,23 @@ namespace TPV_WINDOWS.Datos
             }
         }
 
+        public List<T> BuscarObjetosStringAndString<T>(string propiedad1, string valor1, string propiedad2, string valor2)
+        {
+            try
+            {
+                IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
+                FilterDefinition<T> filter = Builders<T>.Filter.And(
+                    Builders<T>.Filter.Eq(propiedad1, valor1),
+                    Builders<T>.Filter.Eq(propiedad2, valor2)
+                );
+                return collection.Find(filter).ToList();
+            }
+            catch (Exception)
+            {
+                return new List<T>();
+            }
+        }
+
         public List<T> BuscarObjetosBool<T>(string propiedad, bool valor)
         {
             try
@@ -172,6 +189,23 @@ namespace TPV_WINDOWS.Datos
             }
         }
 
+        public List<T> BuscarObjetosIntAndInt<T>(string propiedad1, int valor1, string propiedad2, int valor2)
+        {
+            try
+            {
+                IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
+                FilterDefinition<T> filter = Builders<T>.Filter.And(
+                    Builders<T>.Filter.Eq(propiedad1, valor1),
+                    Builders<T>.Filter.Eq(propiedad2, valor2)
+                );
+                return collection.Find(filter).ToList();
+            }
+            catch (Exception)
+            {
+                return new List<T>();
+            }
+        }
+
         public List<T> LeerObjetosTest<T>(List<T> objetos, string propiedad)
         {
             try
@@ -190,6 +224,8 @@ namespace TPV_WINDOWS.Datos
                 return new List<T>();
             }
         }
+
+
 
         public bool EliminarObjeto<T>(T objeto, string propiedad)
         {

@@ -14,5 +14,6 @@ namespace TPV_WINDOWS.Modelo
         public List<LineaPantalla> LineasPantalla { get => _lineasPantalla; set => _lineasPantalla = value; }
         private int _tarifaUsada;
         public int TarifaUsada { get => _tarifaUsada; set => _tarifaUsada = value; }
+
     }
 }

@@ -23,7 +23,6 @@ namespace TPV_WINDOWS.Vista
         public VentanaPrincipal()
         {
             InitializeComponent();
-            //ControladorComun.IniciarPrograma();
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -58,6 +57,19 @@ namespace TPV_WINDOWS.Vista
         {
             ControladorComun.CerrarPrograma();
         }
+        public void ActualizaInfoUsuario()
+        {
+            lblUsuario.Content = ControladorComun.TpvBase!.UsuarioActual!.Nombre;
+        }
 
+        private void imgExit_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            ControladorComun.CerrarPrograma();
+        }
+
+        private void imgAvatar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

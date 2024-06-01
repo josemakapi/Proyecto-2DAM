@@ -11,8 +11,8 @@ using TPV_WINDOWS.Vista;
 namespace TPV_WINDOWS.Controlador
 {
     /// <summary>
-    /// Superclase estática que controla el inicio y fin del programa y tiene recursos comunes a todos los elementos del programa para evitar
-    /// crear instancias innecesarias.
+    /// Superclase estática que controla el inicio y fin del programa y tiene recursos comunes a todos los elementos 
+    /// del programa para evitar crear instancias innecesarias.
     /// </summary>
     public static class ControladorComun
     {
@@ -36,22 +36,14 @@ namespace TPV_WINDOWS.Controlador
         /// </summary>
         public static void PreInicializaTienda()
         {   
-            if (BD!.ContarObjetos<Tienda>() < 1)
-            {
-                Tiendas = [new Tienda(1, 1, "127.0.0.1", "Tienda de audio de JMCP", 1)];
-                BD!.PersistirObjeto(Tiendas[0]);
-            }
-            else
-            {
-                Tiendas = BD!.LeerObjetosTipo<Tienda>();
-            }
+            CargarTiendas();
         }
 
-        public async static Task<bool> CargarPantallaVentas()
+        public static bool CargarPantallaVentas()
         {
             TpvBase = new TPVBase();
-            await Task.Run(() => TpvBase.InicioTPV());
-
+            //await Task.Run(() => TpvBase.InicioTPV()); //Da petes
+            TpvBase.InicioTPV();
             return true;
         }
 
@@ -87,6 +79,19 @@ namespace TPV_WINDOWS.Controlador
         //    }
         //    return false;
         //}
+        public static void CargarTiendas()
+        {
+            if (BD!.ContarObjetos<Tienda>() < 1)
+            {
+                Tiendas = [new Tienda(1, 1, "192.168.1.200", "Tienda de audio de JMCP", 1)];
+                BD!.PersistirObjeto(Tiendas[0]);
+            }
+            else
+            {
+                Tiendas = BD!.LeerObjetosTipo<Tienda>();
+            }
+        }
+
         public static void CerrarPrograma()
         {
             if (TpvBase != null)

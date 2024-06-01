@@ -34,12 +34,12 @@ namespace TPV_WINDOWS.Vista
             _esClave = esClave;
             if (_esClave)
             {
-                VentanaTecladoNumericoUsuario1.Content = "Introduzca su clave de usuario";
-                
+                VentanaTecladoNumericoUsuario1.Title = "Introduzca su clave de usuario";
+                lblVisor.Visibility = Visibility.Visible;
             }
             else
             {
-                VentanaTecladoNumericoUsuario1.Content = "Introduzca el número";
+                VentanaTecladoNumericoUsuario1.Title = "Introduzca el número";
                 lblVisor.Visibility = Visibility.Visible;
             }
         }
@@ -51,6 +51,7 @@ namespace TPV_WINDOWS.Vista
             }
             else
             {
+                lblVisor.Visibility = Visibility.Visible;
                 if (_esClave)
                 {
                     lblVisor.Content = new string('*', _numeros.Length);
@@ -91,6 +92,7 @@ namespace TPV_WINDOWS.Vista
             else
             { 
                 ControladorComun.TpvBase!.NumerosTeclado = Convert.ToInt16(_numeros);
+                this.Close();
             }
             
         }

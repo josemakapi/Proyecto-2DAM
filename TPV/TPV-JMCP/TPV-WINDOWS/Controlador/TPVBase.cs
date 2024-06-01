@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media.Imaging;
 using TPV_WINDOWS.Datos;
 using TPV_WINDOWS.Modelo;
 using TPV_WINDOWS.Vista;
@@ -16,36 +18,72 @@ namespace TPV_WINDOWS.Controlador
     /// </summary>
     public class TPVBase
     {
+        private int _numTPV = 1; //Esto se define a mano desde aquí. Determina el número de TPV inicial si no se ha definido
         private int _numerosTeclado;
         public int NumerosTeclado { get => _numerosTeclado; set => _numerosTeclado = value; }
+        private List<Usuario> _listaUsuarios;
+        public List<Usuario> ListaUsuarios { get => _listaUsuarios; set => _listaUsuarios = value; }
         private Usuario? _usuarioActual;
         public Usuario? UsuarioActual { get => _usuarioActual; set => _usuarioActual = value; }
         private TPV _tpvCFG = null!;
-        private bool isTPVMaster = true; //Esto se define a mano desde aquí. Determina si esta TPV es Master
         private TPVMaster _procesoMaster = null!;
-        private VentanaTecladoNumericoUsuario _tecladoClave = new VentanaTecladoNumericoUsuario(true);
-        private VentanaTecladoNumericoUsuario _tecladoNumeros = new VentanaTecladoNumericoUsuario(false);
+        //private VentanaTecladoNumericoUsuario _tecladoClave = new VentanaTecladoNumericoUsuario(true);
+        //private VentanaTecladoNumericoUsuario _tecladoNumeros = new VentanaTecladoNumericoUsuario(false);
         private Tarifa? _tarifaActual;
         private PosicionVenta? _posicionVentaActual;
         public PosicionVenta? PosicionVentaActual { get => _posicionVentaActual; set => _posicionVentaActual = value; }
+        VentanaPrincipal? _ventanaPrincipal;
 
+        /// <summary>
+        /// Método que coordina las comprobaciones y operaciones de inicio del TPV
+        /// </summary>
         public void InicioTPV()
         {
-            if (isTPVMaster)
-            { 
+            CargarCfgTPV();
+            CargarUsuarioPredeterminado();
+            CompruebaCierreCaja();
+            if (_tpvCFG.IsTPVMaster)
+            {
                 Task.Run(() =>
                 {
-                    _procesoMaster = new Controlador.TPVMaster();
+                    _procesoMaster = new TPVMaster();
                     _procesoMaster.Iniciar();
                 });
             }
-            //this._tarifaActual = ControladorComun.ListaTarifas!.FirstOrDefault(t => t.Id == _tpvCFG.TarifaDefecto)!;
-            //MessageBox.Show("Hemos cargado TPVBase");
-            //BloqueaTPV();
-            CargaTarifas();
+            CargarTarifas();
+            CompruebaAperturaCaja();
+            _ventanaPrincipal = new VentanaPrincipal();
+            BloqueaTPV();
+            _ventanaPrincipal.Show();
         }
 
-        public void CargaTarifas()
+        private bool CompruebaAperturaCaja()
+        {
+            return true; 
+        }
+
+        private void CargarCfgTPV()
+        {
+            if (ControladorComun.BD!.ContarObjetos<TPV>() < 1)
+            {
+                this._tpvCFG = new TPV(1,1,true,1,1);
+                ControladorComun.BD!.PersistirObjeto(_tpvCFG);
+            }
+            else
+            {
+                this._tpvCFG = ControladorComun.BD!.BuscarObjetosIntAndInt<TPV>("CodTienda",ControladorComun.TiendaActual!.CodTienda,"NumTPV", _numTPV)[0];
+            }
+        }
+
+        private void CargarUsuarioPredeterminado()
+        {
+            if (ControladorComun.BD!.ContarObjetos<Usuario>() < 1)
+            {
+                ControladorComun.BD!.PersistirObjeto(new Usuario(1,"7777",true,"admin"));
+            }
+        }
+
+        public void CargarTarifas()
         {
             if (ControladorComun.BD!.ContarObjetos<Tarifa>() < 1)
             {
@@ -54,10 +92,8 @@ namespace TPV_WINDOWS.Controlador
             }
             else
             {
-                int numTarifa = ControladorComun.BD!.BuscarObjeto<Tienda>(ControladorComun.TiendaActual!, "TarifaDefecto")[0].TarifaDefecto;
-                this._tarifaActual = ControladorComun.BD!.BuscarObjetosInt<Tarifa>("Id", numTarifa)[0];
+                this._tarifaActual = ControladorComun.BD!.BuscarObjetosIntAndInt<Tarifa>("_id", _tpvCFG.TarifaDefecto, "CodTienda", _tpvCFG.CodTienda)[0];
             }
-            this._tpvCFG = new TPV(1, true, 1, 1);
         }
 
         public bool GeneraTicket()
@@ -67,7 +103,7 @@ namespace TPV_WINDOWS.Controlador
 
         public bool FinTPV()
         {
-            if (this.isTPVMaster && this._procesoMaster != null)
+            if (this._tpvCFG.IsTPVMaster && this._procesoMaster != null)
             {
                 if (!_procesoMaster!.IsRunning)
                 {
@@ -80,13 +116,20 @@ namespace TPV_WINDOWS.Controlador
             }
             return false;
         }
-        public void BloqueaTPV()
+
+        public void ActualizaPantalla()
         {
-            _tecladoClave.ShowDialog();
-            _numerosTeclado = 0;
+            
         }
 
-        public bool CompruebaCierre()
+        public void BloqueaTPV()
+        {
+            new VentanaTecladoNumericoUsuario(true).ShowDialog();
+            //_usuarioActual = ControladorComun.BD!.BuscarObjetosIntAndInt<Usuario>("Clave", _numerosTeclado, "CodTienda", _tpvCFG.CodTienda)[0]; //kk
+            //_ventanaPrincipal.ActualizaPantalla();
+        }
+
+        public bool CompruebaCierreCaja()
         {
             return true;
         }
@@ -118,7 +161,39 @@ namespace TPV_WINDOWS.Controlador
         public bool CompruebaClave(string clave)
         {
             List<Usuario> usuarios = ControladorComun.BD!.BuscarObjetosString<Usuario>("Clave", clave).ToList();
-            return usuarios.Any();
+            if (usuarios.Count > 0)
+            {
+                return usuarios.Any(x => x.EsActivo);
+            }
+            return false;
+        }
+
+        public string ElegirImagenAvatar()
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+            openFileDialog.Title = "Selecciona imagen de avatar";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                return openFileDialog.FileName;
+            }
+
+            return string.Empty;
+        }
+
+        public BitmapImage? CargarImagen(string rutaImagen)
+        {
+            if (!string.IsNullOrEmpty(rutaImagen))
+            {
+                BitmapImage imagen = new BitmapImage();
+                imagen.BeginInit();
+                imagen.UriSource = new System.Uri(rutaImagen);
+                imagen.EndInit();
+                return imagen;
+            }
+
+            return null;
         }
     }
 }

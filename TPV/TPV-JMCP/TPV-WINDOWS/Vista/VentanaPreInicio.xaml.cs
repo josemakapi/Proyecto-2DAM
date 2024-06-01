@@ -19,22 +19,15 @@ using TPV_WINDOWS.Modelo;
 namespace TPV_WINDOWS.Vista
 {
     /// <summary>
-    /// Lógica de interacción para VentanaPreInicio.xaml
+    /// Ventana que se carga al inicio del programa para seleccionar la tienda y conectarse a la BD
     /// </summary>
     public partial class VentanaPreInicio : Window
     {
-        //private List<Tienda>? _tiendas;
-        //public List<Tienda>? Tiendas { get => _tiendas; set => _tiendas = value; }
-
-
-
-
         public VentanaPreInicio()
         {
             InitializeComponent();
             grpTienda.Visibility = Visibility.Hidden;
             btnTienda.Visibility = Visibility.Hidden;
-
         }
 
         private void txtBPuerto_TextChanged(object sender, TextChangedEventArgs e)
@@ -61,11 +54,22 @@ namespace TPV_WINDOWS.Vista
             }
         }
 
-        private async void btnTienda_Click(object sender, RoutedEventArgs e)
+        private void btnTienda_Click(object sender, RoutedEventArgs e)
         {
-            ControladorComun.TiendaActual = (Tienda)cmbBTiendas.SelectedItem;
-            await ControladorComun.CargarPantallaVentas();
-            this.Close();
+            if (cmbBTiendas.SelectedItem == null)
+            {
+                MessageBox.Show("Debe seleccionar una tienda");
+            }
+            else
+            {
+                ControladorComun.TiendaActual = (Tienda)cmbBTiendas.SelectedItem;
+                this.Close();
+            }
+        }
+
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+            ControladorComun.CargarPantallaVentas();
         }
     }
 

@@ -1,3 +1,16 @@
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\TPV-WINDOWS.csproj.AssemblyReference.cache
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\MainWindow_old.g.cs
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaAcciones.g.cs
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaEncargado.g.cs
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaPreInicio.g.cs
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaPrincipal.g.cs
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaTecladoNumericoUsuario.g.cs
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\App.g.cs
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\TPV-WINDOWS_MarkupCompile.cache
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\TPV-WINDOWS_MarkupCompile.lref
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\TPV-WINDOWS.dll
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\refint\TPV-WINDOWS.dll
+C:\Proyecto 2DAM - copia\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\TPV-WINDOWS.pdb
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\bin\Debug\net8.0-windows\TPV-WINDOWS.exe
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\bin\Debug\net8.0-windows\TPV-WINDOWS.deps.json
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\bin\Debug\net8.0-windows\TPV-WINDOWS.runtimeconfig.json
@@ -21,6 +34,7 @@ C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\TPV-WINDOWS.c
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\MainWindow_old.g.cs
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaAcciones.g.cs
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaEncargado.g.cs
+C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaPreInicio.g.cs
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaPrincipal.g.cs
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaTecladoNumericoUsuario.g.cs
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\App.g.cs
@@ -29,6 +43,7 @@ C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\TPV-WINDOWS_M
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\MainWindow_old.baml
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaAcciones.baml
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaEncargado.baml
+C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaPreInicio.baml
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaPrincipal.baml
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaTecladoNumericoUsuario.baml
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\TPV-WINDOWS.g.resources
@@ -43,5 +58,3 @@ C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\refint\TPV-WI
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\TPV-WINDOWS.pdb
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\TPV-WINDOWS.genruntimeconfig.cache
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\ref\TPV-WINDOWS.dll
-C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaPreInicio.g.cs
-C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaPreInicio.baml
