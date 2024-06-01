@@ -17,7 +17,7 @@
                 <DropShadowEffect/>
             </ListBox.Effect>
         </ListBox>
-        <TabControl RenderTransformOrigin="0,0" Margin="0,0,323,0">
+        <TabControl RenderTransformOrigin="0,0" Margin="0,0,317,0">
             <TabControl.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -27,9 +27,74 @@
                 </TransformGroup>
             </TabControl.RenderTransform>
             <TabItem x:Name="tab1" Header="Auriculares">
-                <Grid Background="AliceBlue" HorizontalAlignment="Left" Margin="0,0,0,0" Width="700" Height="710">
-                    
-                    
+                <Grid Background="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center" Width="693" Height="692">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="98"/>
+                        <RowDefinition Height="98"/>
+                        <RowDefinition Height="98"/>
+                        <RowDefinition Height="98"/>
+                        <RowDefinition Height="98"/>
+                        <RowDefinition Height="98"/>
+                        <RowDefinition Height="98"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="98"/>
+                        <ColumnDefinition Width="98"/>
+                        <ColumnDefinition Width="98"/>
+                        <ColumnDefinition Width="98"/>
+                        <ColumnDefinition Width="98"/>
+                        <ColumnDefinition Width="98"/>
+                        <ColumnDefinition Width="98"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="imgfil0col0" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="0" Grid.Column="0"/>
+                    <Image x:Name="imgfil0col1" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="0" Grid.Column="1"/>
+                    <Image x:Name="imgfil0col2" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="0" Grid.Column="2"/>
+                    <Image x:Name="imgfil0col3" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="0" Grid.Column="3"/>
+                    <Image x:Name="imgfil0col4" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="0" Grid.Column="4"/>
+                    <Image x:Name="imgfil0col5" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="0" Grid.Column="5"/>
+                    <Image x:Name="imgfil0col6" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="0" Grid.Column="6"/>
+                    <Image x:Name="imgfil1col0" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="1" Grid.Column="0"/>
+                    <Image x:Name="imgfil1col1" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="1" Grid.Column="1"/>
+                    <Image x:Name="imgfil1col2" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="1" Grid.Column="2"/>
+                    <Image x:Name="imgfil1col3" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="1" Grid.Column="3"/>
+                    <Image x:Name="imgfil1col4" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="1" Grid.Column="4"/>
+                    <Image x:Name="imgfil1col5" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="1" Grid.Column="5"/>
+                    <Image x:Name="imgfil1col6" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="1" Grid.Column="6"/>
+                    <Image x:Name="imgfil2col0" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="2" Grid.Column="0"/>
+                    <Image x:Name="imgfil2col1" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="2" Grid.Column="1"/>
+                    <Image x:Name="imgfil2col2" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="2" Grid.Column="2"/>
+                    <Image x:Name="imgfil2col3" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="2" Grid.Column="3"/>
+                    <Image x:Name="imgfil2col4" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="2" Grid.Column="4"/>
+                    <Image x:Name="imgfil2col5" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="2" Grid.Column="5"/>
+                    <Image x:Name="imgfil2col6" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="2" Grid.Column="6"/>
+                    <Image x:Name="imgfil3col0" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="3" Grid.Column="0"/>
+                    <Image x:Name="imgfil3col1" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="3" Grid.Column="1"/>
+                    <Image x:Name="imgfil3col2" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="3" Grid.Column="2"/>
+                    <Image x:Name="imgfil3col3" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="3" Grid.Column="3"/>
+                    <Image x:Name="imgfil3col4" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="3" Grid.Column="4"/>
+                    <Image x:Name="imgfil3col5" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="3" Grid.Column="5"/>
+                    <Image x:Name="imgfil3col6" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="3" Grid.Column="6"/>
+                    <Image x:Name="imgfil4col0" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="4" Grid.Column="0"/>
+                    <Image x:Name="imgfil4col1" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="4" Grid.Column="1"/>
+                    <Image x:Name="imgfil4col2" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="4" Grid.Column="2"/>
+                    <Image x:Name="imgfil4col3" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="4" Grid.Column="3"/>
+                    <Image x:Name="imgfil4col4" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="4" Grid.Column="4"/>
+                    <Image x:Name="imgfil4col5" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="4" Grid.Column="5"/>
+                    <Image x:Name="imgfil4col6" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="4" Grid.Column="6"/>
+                    <Image x:Name="imgfil5col0" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="5" Grid.Column="0"/>
+                    <Image x:Name="imgfil5col1" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="5" Grid.Column="1"/>
+                    <Image x:Name="imgfil5col2" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="5" Grid.Column="2"/>
+                    <Image x:Name="imgfil5col3" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="5" Grid.Column="3"/>
+                    <Image x:Name="imgfil5col4" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="5" Grid.Column="4"/>
+                    <Image x:Name="imgfil5col5" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="5" Grid.Column="5"/>
+                    <Image x:Name="imgfil5col6" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="5" Grid.Column="6"/>
+                    <Image x:Name="imgfil6col0" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="6" Grid.Column="0"/>
+                    <Image x:Name="imgfil6col1" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="6" Grid.Column="1"/>
+                    <Image x:Name="imgfil6col2" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="6" Grid.Column="2"/>
+                    <Image x:Name="imgfil6col3" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="6" Grid.Column="3"/>
+                    <Image x:Name="imgfil6col4" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="6" Grid.Column="4"/>
+                    <Image x:Name="imgfil6col5" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="6" Grid.Column="5"/>
+                    <Image x:Name="imgfil6col6" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="6" Grid.Column="6"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tab2" Header="Amplificadores" HorizontalAlignment="Left" Margin="0,0,0,0" Width="95">
@@ -58,22 +123,22 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button Content="Bloquear pantalla" HorizontalAlignment="Left" Margin="710,415,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="Button_Click_1" FontSize="13">
+        <Button x:Name="btnTarifa" Content="Cambiar tarifa" HorizontalAlignment="Left" Margin="710,415,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="btnTarifa_Click"  FontSize="13" RenderTransformOrigin="0.5,0.5">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button Content="ACCIONES" HorizontalAlignment="Left" Margin="710,476,0,0" VerticalAlignment="Top" Height="48" Width="271" Click="Button_Click_1" FontSize="13">
+        <Button x:Name="btnAcciones" Content="ACCIONES" HorizontalAlignment="Left" Margin="710,476,0,0" VerticalAlignment="Top" Height="48" Width="271" Click="btnAcciones_Click"  FontSize="13">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Image x:Name="imgAvatar" Margin="0,567,107,86" Source="/Recursos/Imagenes/profile.png" MouseLeftButtonDown="imgAvatar_MouseLeftButtonDown" RenderTransformOrigin="0.886,0.6" Width="107" Stretch="Fill" HorizontalAlignment="Right">
+        <Image x:Name="imgAvatar" Margin="0,563,96,79" Source="/Recursos/Imagenes/profile.png" MouseLeftButtonDown="imgAvatar_MouseLeftButtonDown" RenderTransformOrigin="0.886,0.6" Width="129" Stretch="Fill" HorizontalAlignment="Right">
             <Image.Effect>
                 <DropShadowEffect/>
             </Image.Effect>
         </Image>
-        <Label x:Name="lblUsuario" Content="Johnny Mentero" HorizontalAlignment="Left" Margin="794,529,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Red"/>
+        <Label x:Name="lblUsuario" Content="Johnny Mentero" HorizontalAlignment="Left" Margin="786,529,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Red" FontWeight="Black"/>
         <Image x:Name="imgExit" Margin="935,669,0,0" Source="/Recursos/Imagenes/pngegg48_.png" MouseLeftButtonDown="imgExit_MouseLeftButtonDown" Width="46" Panel.ZIndex="99" HorizontalAlignment="Left" Stretch="Fill" RenderTransformOrigin="0.438,0.417" Height="45" VerticalAlignment="Top">
             <Image.Effect>
                 <DropShadowEffect/>

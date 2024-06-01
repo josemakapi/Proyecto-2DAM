@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -79,7 +80,7 @@ namespace TPV_WINDOWS.Controlador
         {
             if (ControladorComun.BD!.ContarObjetos<Usuario>() < 1)
             {
-                ControladorComun.BD!.PersistirObjeto(new Usuario(1,"7777",true,"admin"));
+                ControladorComun.BD!.PersistirObjeto(new Usuario(1,"7777",1,true,"admin",new BitmapImage(new Uri("C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Recursos\\Imagenes\\profile.png"))));
             }
         }
 
@@ -126,7 +127,7 @@ namespace TPV_WINDOWS.Controlador
         {
             new VentanaTecladoNumericoUsuario(true).ShowDialog();
             //_usuarioActual = ControladorComun.BD!.BuscarObjetosIntAndInt<Usuario>("Clave", _numerosTeclado, "CodTienda", _tpvCFG.CodTienda)[0]; //kk
-            //_ventanaPrincipal.ActualizaPantalla();
+            _ventanaPrincipal.ActualizaInfoUsuario();
         }
 
         public bool CompruebaCierreCaja()

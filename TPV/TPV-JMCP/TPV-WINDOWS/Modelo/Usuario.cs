@@ -24,10 +24,11 @@ namespace TPV_WINDOWS.Modelo
         private bool _esActivo;
         public bool EsActivo { get => _esActivo; set => _esActivo = value; }
         
-        public Usuario(int id, string clave, bool esEncargado, string nombre, BitmapImage avatar)
+        public Usuario(int id, string clave, int codTienda, bool esEncargado, string nombre, BitmapImage avatar)
         {
             _id = id;
             _clave = clave;
+            _codTienda = codTienda;
             _esEncargado = esEncargado;
             _nombre = nombre;
             _avatar = avatar;

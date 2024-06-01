@@ -30,14 +30,6 @@ namespace TPV_WINDOWS.Vista
 
         }
 
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            VentanaAcciones ventanaAcciones = new VentanaAcciones();
-            this.Show();
-            ventanaAcciones.ShowDialog();
-        }
-
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             ControladorComun.CerrarPrograma();
@@ -50,7 +42,7 @@ namespace TPV_WINDOWS.Vista
 
         private void btnFuncEnc_Click(object sender, RoutedEventArgs e)
         {
-            ControladorComun.TpvBase!.InsertarProductoTest();
+            new VentanaEncargado().ShowDialog();
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
@@ -60,6 +52,7 @@ namespace TPV_WINDOWS.Vista
         public void ActualizaInfoUsuario()
         {
             lblUsuario.Content = ControladorComun.TpvBase!.UsuarioActual!.Nombre;
+            imgAvatar.Source = ControladorComun.TpvBase!.UsuarioActual!.Avatar;
         }
 
         private void imgExit_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -69,7 +62,19 @@ namespace TPV_WINDOWS.Vista
 
         private void imgAvatar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            ControladorComun.TpvBase!.BloqueaTPV();
+        }
 
+        private void btnTarifa_Click(object sender, RoutedEventArgs e)
+        {
+            ControladorComun.TpvBase!.InsertarProductoTest();
+        }
+
+        private void btnAcciones_Click(object sender, RoutedEventArgs e)
+        {
+            VentanaAcciones ventanaAcciones = new VentanaAcciones();
+            this.Show();
+            ventanaAcciones.ShowDialog();
         }
     }
 }

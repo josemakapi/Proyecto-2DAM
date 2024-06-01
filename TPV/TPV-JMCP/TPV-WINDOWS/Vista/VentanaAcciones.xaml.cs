@@ -23,5 +23,10 @@ namespace TPV_WINDOWS.Vista
         {
             InitializeComponent();
         }
+
+        private void btnVolver_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

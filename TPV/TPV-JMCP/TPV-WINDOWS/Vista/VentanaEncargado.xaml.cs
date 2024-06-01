@@ -24,5 +24,14 @@ namespace TPV_WINDOWS.Vista
             InitializeComponent();
         }
 
+        private void btnAtras_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAdmon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
