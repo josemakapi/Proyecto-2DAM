@@ -46,44 +46,11 @@ namespace TPV_WINDOWS.Controlador
             TpvBase.InicioTPV();
             return true;
         }
-
-        //public static bool IniciarPrograma()
-        //{
-        //    if (TpvBase == null)
-        //    {
-        //        BD = new BDMongo("127.0.0.1", 12470, "root", "nonoTiene%1272");
-        //        if (!BD.ConectarBD("TPVJMCP"))
-        //        {
-        //            MessageBox.Show("Error al conectar a la BD");
-        //            return false;
-        //        }
-        //        else
-        //        {
-        //            //MessageBox.Show("Éxito al conectar a la BD");
-        //            if (ControladorComun.BD!.ContarObjetos<Tienda>() < 1)
-        //            {
-        //                TiendaActual = new Tienda(1, 1, "127.0.0.1", "Tienda de audio de JMCP", 1);
-        //                ControladorComun.BD!.PersistirObjeto(TiendaActual);
-        //            }
-        //            else
-        //            {
-        //                TiendaActual = ControladorComun.BD!.LeerObjetosTipo<Tienda>().FirstOrDefault();
-        //            }
-
-        //            //ListaTarifas = BD.LeerObjetosTipo<Tarifa>();
-        //            TpvBase = new TPVBase();
-
-        //            TpvBase.InicioTPV();
-        //            return true;
-        //        }
-        //    }
-        //    return false;
-        //}
         public static void CargarTiendas()
         {
             if (BD!.ContarObjetos<Tienda>() < 1)
             {
-                Tiendas = [new Tienda(1, 1, "192.168.1.200", "Tienda de audio de JMCP", 1)];
+                Tiendas = [new Tienda(0,0, 1, "192.168.1.200", "Tienda de audio de JMCP", 0)];
                 BD!.PersistirObjeto(Tiendas[0]);
             }
             else

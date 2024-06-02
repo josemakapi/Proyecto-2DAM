@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TPV_WINDOWS.Controlador;
+using TPV_WINDOWS.Modelo;
 
 namespace TPV_WINDOWS.Vista
 {
@@ -23,6 +24,7 @@ namespace TPV_WINDOWS.Vista
         public VentanaPrincipal()
         {
             InitializeComponent();
+            GenerateTabItems(ControladorComun.TpvBase!.Secciones);
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -76,5 +78,59 @@ namespace TPV_WINDOWS.Vista
             this.Show();
             ventanaAcciones.ShowDialog();
         }
+
+        public void GenerateTabItems(List<Seccion> secciones)
+        {
+            foreach (Seccion seccion in secciones)
+            {
+                TabItem tabItem = new TabItem();
+                tabItem.Header = seccion.Nombre;
+
+                Grid gridProductos = new Grid();
+                gridProductos.Background = Brushes.AliceBlue;
+                gridProductos.VerticalAlignment = VerticalAlignment.Center;
+                gridProductos.HorizontalAlignment = HorizontalAlignment.Center;
+                gridProductos.Width = 693;
+                gridProductos.Height = 692;
+
+                int rowCount = (seccion.Productos.Count + 6) / 7; // Hallar el nº de filas
+                for (int i = 0; i < rowCount; i++)
+                {
+                    gridProductos.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(98) });
+                }
+
+                int columnCount = Math.Min(seccion.Productos.Count, 7); // Máximo de 7 columnas
+                for (int i = 0; i < columnCount; i++)
+                {
+                    gridProductos.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(98) });
+                }
+
+                int productIndex = 0;
+                for (int row = 0; row < rowCount; row++)
+                {
+                    for (int col = 0; col < columnCount; col++)
+                    {
+                        if (productIndex < seccion.Productos.Count)
+                        {
+                            Producto producto = seccion.Productos[productIndex];
+
+                            Image image = new Image();
+                            image.Source = producto.Imagen;
+                            image.Width = 98;
+                            image.Height = 98;
+                            Grid.SetRow(image, row);
+                            Grid.SetColumn(image, col);
+                            gridProductos.Children.Add(image);
+
+                            productIndex++;
+                        }
+                    }
+                }
+
+                tabItem.Content = gridProductos;
+                tabControl.Items.Add(tabItem);
+            }
+        }
+
     }
 }

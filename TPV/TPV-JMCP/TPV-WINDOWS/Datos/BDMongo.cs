@@ -161,6 +161,23 @@ namespace TPV_WINDOWS.Datos
             }
         }
 
+        public List<T> BuscarObjetosStringAndInt<T>(string propiedad1, string valor1, string propiedad2, int valor2)
+        {
+            try
+            {
+                IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
+                FilterDefinition<T> filter = Builders<T>.Filter.And(
+                    Builders<T>.Filter.Eq(propiedad1, valor1),
+                    Builders<T>.Filter.Eq(propiedad2, valor2)
+                );
+                return collection.Find(filter).ToList();
+            }
+            catch (Exception)
+            {
+                return new List<T>();
+            }
+        }
+
         public List<T> BuscarObjetosBool<T>(string propiedad, bool valor)
         {
             try
