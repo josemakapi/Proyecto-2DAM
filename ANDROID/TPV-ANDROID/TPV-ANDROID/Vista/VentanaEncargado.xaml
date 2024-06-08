@@ -1,0 +1,28 @@
+﻿<Window x:Name="VentanaEncargado1" x:Class="TPV_WINDOWS.Vista.VentanaEncargado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TPV_WINDOWS.Vista"
+        mc:Ignorable="d"
+        Title="Opciones de encargado" Height="359" Width="491" HorizontalAlignment="Center" VerticalAlignment="Center" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,5">
+        <Button x:Name="btnAtras" Content="Volver" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="22" Width="51" Click="btnAtras_Click"/>
+        <GroupBox Header="Operaciones de caja" Margin="36,62,0,168" HorizontalAlignment="Left" Width="157"/>
+        <Button Content="Cierre de caja" HorizontalAlignment="Left" Margin="51,95,0,0" VerticalAlignment="Top" Height="21" Width="110"/>
+        <Button Content="Salidas de caja" HorizontalAlignment="Left" Margin="51,127,0,0" VerticalAlignment="Top" Width="110"/>
+        <GroupBox Header="Ventas" Margin="36,188,0,53" HorizontalAlignment="Left" Width="157"/>
+        <Button Content="Factura nominativa" HorizontalAlignment="Left" Margin="51,216,0,0" VerticalAlignment="Top" Width="111"/>
+        <Button Content="Anulación de tickets" HorizontalAlignment="Left" Margin="51,247,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="Gestión" Margin="228,114,0,88" Width="190" Panel.ZIndex="1" HorizontalAlignment="Center">
+            <StackPanel Height="59" HorizontalAlignment="Center" Width="178">
+                <Button x:Name="btnAdmon" Content="Admon. de vendedores" HorizontalAlignment="Left" Panel.ZIndex="99" UseLayoutRounding="False" Margin="0,0,0,10" Click="btnAdmon_Click">
+
+                </Button>
+                <Button x:Name="btnIdTPV" Content="!! Cambiar Id TPV" HorizontalAlignment="Left" Panel.ZIndex="99"/>
+
+            </StackPanel>
+        </GroupBox>
+
+    </Grid>
+</Window>

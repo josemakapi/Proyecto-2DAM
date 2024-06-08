@@ -23,7 +23,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0-android",
+          "net8.0-android34.0",
           "net8.0-maccatalyst"
         ],
         "sources": {
@@ -33,7 +33,7 @@
         },
         "frameworks": {
           "net8.0-android34.0": {
-            "targetAlias": "net8.0-android",
+            "targetAlias": "net8.0-android34.0",
             "projectReferences": {}
           },
           "net8.0-maccatalyst17.2": {
@@ -54,7 +54,7 @@
       },
       "frameworks": {
         "net8.0-android34.0": {
-          "targetAlias": "net8.0-android",
+          "targetAlias": "net8.0-android34.0",
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -73,6 +73,10 @@
               "target": "Package",
               "version": "[8.0.4, )",
               "autoReferenced": true
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
             }
           },
           "imports": [
@@ -116,6 +120,10 @@
               "target": "Package",
               "version": "[8.0.4, )",
               "autoReferenced": true
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
             }
           },
           "imports": [

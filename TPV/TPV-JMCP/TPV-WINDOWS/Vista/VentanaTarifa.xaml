@@ -1,0 +1,16 @@
+﻿<Window x:Class="TPV_WINDOWS.Vista.VentanaTarifa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TPV_WINDOWS.Vista"
+        mc:Ignorable="d"
+        Title="Seleccione tarifa" Height="301" Width="411" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False">
+    <Grid>
+        <Label Content="Por favor seleccione la tarifa:" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbTarifa" HorizontalAlignment="Center" Margin="0,119,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Tarifa}" DisplayMemberPath="Descripcion"/>
+        <Button x:Name="btnTarifa" Content="Aceptar" HorizontalAlignment="Center" Margin="0,221,0,0" VerticalAlignment="Top" ToolTip="Aplicar tarifa" Height="22" Width="57" Click="btnTarifa_Click"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ANDROID_INFORMES_JMCP.Resources.Strings.English">
+    <x:String x:Key="headerConfigText">Settings</x:String>
+    <x:String x:Key="headerHelpText">User's manual</x:String>
+    <x:String x:Key="headerAboutText">About UrbeXPlorer</x:String>
+    <x:String x:Key="headerMisLugaresText">My places</x:String>
+    <x:String x:Key="headerAdminText">Admin mode</x:String>
+    <x:String x:Key="headerBusquedasGuardadas">Saved searchings</x:String>
+    <x:String x:Key="headerSearchText">Search for places</x:String>
+    <x:String x:Key="headerRegisterText">Register</x:String>
+    <x:String x:Key="temaOriginalName">Original (recommended)</x:String>
+    <x:String x:Key="temaACName">High contrast</x:String>
+    <x:String x:Key="tamLetraBig">Big</x:String>
+    <x:String x:Key="tamLetraSmall">Small</x:String>
+    <x:String x:Key="idiomaCastellano">Castillian</x:String>
+    <x:String x:Key="idiomaEnglish">English</x:String>
+    <x:String x:Key="optProvincia">Main province:</x:String>
+    <x:String x:Key="optIdioma">Search language: </x:String>
+    <x:String x:Key="optVisualTheme">Visual theme: </x:String>
+    <x:String x:Key="optFontSize">Font size: </x:String>
+    <x:String x:Key="keyword">Key word</x:String>
+    <x:String x:Key="search">Search</x:String>
+    <x:String x:Key="keySearch">Keyword for news searching</x:String>
+    <x:String x:Key="exitApp">Exit UrbeXPlorer</x:String>
+    <x:String x:Key="txtAbout">This application has been developed by Jose Manuel Calles during the 2nd Multiplatform Application Development course at CIFP No.1 Institute in Cuenca, in the Interface Development subject. To contact the author, please reach out to josemankapi@hotmail.com</x:String>
+    <x:String x:Key="buscaProv">Search only in my province</x:String>
+    <x:String x:Key="anadeBusq">Add to my searchings</x:String>
+    <x:String x:Key="asigMuni">Assign municipality</x:String>
+    <x:String x:Key="addMyPlaces">Add to My Places</x:String>
+    <x:String x:Key="borraBusc">Clear searching</x:String>
+
+</ResourceDictionary>

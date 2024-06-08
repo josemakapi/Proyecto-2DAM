@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -37,7 +38,7 @@ namespace TPV_WINDOWS.Datos
             this._port = port;
             this._username = username;
             this._password = password;
-            this._connectionString = $"mongodb://{this._username}:{this._password}@{this._host}:{this._port}/?connectTimeoutMS=5000&socketTimeoutMS=5000&maxIdleTimeMS=5000";
+            this._connectionString = $"mongodb://{this._username}:{this._password}@{this._host}:{this._port}/?connectTimeoutMS=5000&socketTimeoutMS=5000&maxIdleTimeMS=5000&tls=false";
 
             
         }
@@ -65,6 +66,18 @@ namespace TPV_WINDOWS.Datos
         {
             try
             {
+                MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(this._connectionString));
+                settings.UseTls= false;
+                /*
+                settings.SslSettings = new SslSettings
+                {
+                    ClientCertificates = new List<X509Certificate>
+                {
+                    new X509Certificate2("<ruta-al-certificado-pem>")
+                },
+                    CheckCertificateRevocation = false
+                };
+                */
                 this._clienteDB = new MongoClient(this._connectionString);
                 this._dbTPV = this._clienteDB.GetDatabase(dbName);
                 return IsBDConnected();
@@ -100,6 +113,7 @@ namespace TPV_WINDOWS.Datos
                 return false;
             }
         }
+
 
         public List<T> LeerObjetosTipo<T>()
         {
@@ -244,6 +258,7 @@ namespace TPV_WINDOWS.Datos
 
 
 
+
         public bool EliminarObjeto<T>(T objeto, string propiedad)
         {
             try
@@ -259,20 +274,56 @@ namespace TPV_WINDOWS.Datos
             }
         }
 
-        public bool ActualizarObjeto<T>(T objeto, string propiedad)
+        public bool ActualizarObjeto<T>(T objeto)
         {
             try
             {
                 IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
-                FilterDefinition<T> filter = Builders<T>.Filter.Eq(propiedad, objeto!.GetType().GetProperty(propiedad)?.GetValue(objeto));
-                collection.ReplaceOne(filter, objeto);
-                return true;
+
+                // Usa reflexión para obtener la propiedad Id
+                var idProperty = typeof(T).GetProperty("Id");
+                if (idProperty == null)
+                {
+                    throw new ArgumentException($"El objeto de tipo '{typeof(T).Name}' no tiene una propiedad 'Id'.");
+                }
+
+                // Obtiene el valor de la propiedad Id
+                var idValue = idProperty.GetValue(objeto);
+                if (idValue == null)
+                {
+                    throw new ArgumentException($"El valor de la propiedad 'Id' no puede ser nulo.");
+                }
+
+                // Crea un filtro para encontrar el documento con el Id especificado
+                var filter = Builders<T>.Filter.Eq("Id", idValue);
+
+                // Realiza la actualización del documento
+                var result = collection.ReplaceOne(filter, objeto);
+
+                // Verifica si la operación fue exitosa
+                return result.IsAcknowledged && result.ModifiedCount > 0;
             }
             catch (Exception)
             {
                 return false;
             }
         }
+
+
+        //public bool ActualizarObjeto<T>(T objeto, string propiedad)
+        //{
+        //    try
+        //    {
+        //        IMongoCollection<T> collection = this._dbTPV!.GetCollection<T>(typeof(T).Name);
+        //        FilterDefinition<T> filter = Builders<T>.Filter.Eq(propiedad, objeto!.GetType().GetProperty(propiedad)?.GetValue(objeto));
+        //        collection.ReplaceOne(filter, objeto);
+        //        return true;
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return false;
+        //    }
+        //}
         public int SelectMAXInt(string nombreClase, string nombreMiembroPrivado)
         {
             try

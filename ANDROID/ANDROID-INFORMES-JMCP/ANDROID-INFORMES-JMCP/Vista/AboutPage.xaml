@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ANDROID_INFORMES_JMCP.Vista.AboutPage"
+             x:Name="shellAbout"
+             BackgroundImageSource="{DynamicResource imagenFondo}">
+
+    <Grid RowDefinitions="Auto,Auto,*">
+        <Grid Grid.Row="0" RowDefinitions="*,*,Auto" ColumnDefinitions="Auto,*,*" BackgroundColor="{DynamicResource HeaderColor}">
+
+            <Image Source="about.png" WidthRequest="80" InputTransparent="True" HeightRequest="80" Margin="20,20,20,20" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start"/>
+            <Label Margin="20,20,20,0"
+                Text="{DynamicResource headerAboutText}" TextColor="{DynamicResource HeaderColorText}"
+                FontFamily="grafiti2" FontSize="33" 
+                HorizontalOptions="Start" Grid.Row="0" Grid.Column="1"
+                BackgroundColor="Transparent"/>
+            <Button ImageSource="logout_app.png" HorizontalOptions="EndAndExpand" SemanticProperties.Description="Salir de UrbeXPlorer" ToolTipProperties.Text="{DynamicResource exitApp}"
+                Clicked="Button_Clicked" Margin="0,0,20,0" Grid.Row="0" Grid.Column="2" WidthRequest="64" HeightRequest="64" Style="{DynamicResource btnSalirStyle}"/>
+
+        </Grid>
+        <VerticalStackLayout Grid.Row="1">
+            <Image Source="logo_jmcp.jpg" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" Margin="0,20,0,50"/>
+            <Label Text="{DynamicResource txtAbout}"
+                   FontSize="24" FontFamily="Roboto-Medium" Margin="100,0,100,20" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+        <ImageButton Grid.Row="2" Source="cifp_logo.png" WidthRequest="306"  HorizontalOptions="Center" SemanticProperties.Description="Haz click en esta imagen en la que te has situado si quieres acceder a la web del CIFP número 1 de Cuenca"
+            Command="{Binding AbreURL}" VerticalOptions="End" CommandParameter="https://www.cifpcuenca.es/" Margin="0,0,0,30"/>
+    </Grid>
+    
+</ContentPage>

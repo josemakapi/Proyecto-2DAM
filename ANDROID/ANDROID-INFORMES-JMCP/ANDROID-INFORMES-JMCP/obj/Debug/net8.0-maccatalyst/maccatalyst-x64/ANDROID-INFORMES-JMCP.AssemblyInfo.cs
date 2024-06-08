@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ANDROID-INFORMES-JMCP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8cbc3baf7916d527e2c8f7daf26542f38362a595")]
 [assembly: System.Reflection.AssemblyProductAttribute("ANDROID-INFORMES-JMCP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ANDROID-INFORMES-JMCP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

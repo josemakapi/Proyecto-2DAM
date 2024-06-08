@@ -28,15 +28,16 @@ namespace TPV_WINDOWS.Controlador
         public Usuario? UsuarioActual { get => _usuarioActual; set => _usuarioActual = value; }
         private TPV _tpvCFG = null!;
         private TPVMaster _procesoMaster = null!;
-        //private VentanaTecladoNumericoUsuario _tecladoClave = new VentanaTecladoNumericoUsuario(true);
-        //private VentanaTecladoNumericoUsuario _tecladoNumeros = new VentanaTecladoNumericoUsuario(false);
         private Tarifa? _tarifaActual;
+        public Tarifa? TarifaActual { get => _tarifaActual; set => _tarifaActual = value; }
         private PosicionVenta? _posicionVentaActual;
         public PosicionVenta? PosicionVentaActual { get => _posicionVentaActual; set => _posicionVentaActual = value; }
         private VentanaPrincipal? _ventanaPrincipal;
         private List<Seccion>? _secciones;
         public List<Seccion>? Secciones { get => _secciones; set => _secciones = value; }
         private List<Producto>? _productos;
+        private List<Tarifa>? _tarifas;
+        public List<Tarifa>? Tarifas { get => _tarifas; set => _tarifas = value; }
 
         /// <summary>
         /// Método que coordina las comprobaciones y operaciones de inicio del TPV
@@ -96,14 +97,31 @@ namespace TPV_WINDOWS.Controlador
         {
             if (ControladorComun.BD!.ContarObjetos<Tarifa>() < 1)
             {
-                this._tarifaActual = new Tarifa(0,"Tarifa Base PVP", 0, 21, "PVP sin IVA incluido");
-                this._tarifaActual.AnadirProducto(0, 600);
-                ControladorComun.BD!.PersistirObjeto(_tarifaActual);
+                this._tarifaActual = new Tarifa(0,0,"Tarifa Base PVP", 0, 21, "PVP sin IVA incluido");
+                Tarifa tarifaAlt = new Tarifa(1, "Tarifa Oferta PVP", 0, 21, "PVP Oferta sin IVA incluido");
+
+                this._tarifaActual.AnadirProducto(0, 600,true);
+                tarifaAlt.AnadirProducto(0, 515, true);
+                this._tarifaActual.AnadirProducto(1, 1200,true);
+                tarifaAlt.AnadirProducto(1, 1100, true);
+                this._tarifaActual.AnadirProducto(2, 219, true);
+                tarifaAlt.AnadirProducto(2, 190, true);
+                this._tarifaActual.AnadirProducto(3, 100, true);
+                tarifaAlt.AnadirProducto(3, 90, true);
+                ControladorComun.BD!.ActualizarObjeto(_tarifaActual);
+                ControladorComun.BD!.ActualizarObjeto(tarifaAlt);
             }
             else
             {
-                this._tarifaActual = ControladorComun.BD!.BuscarObjetosIntAndInt<Tarifa>("_id", _tpvCFG.TarifaDefecto, "CodTienda", _tpvCFG.CodTienda)[0];
+                this._tarifaActual = ControladorComun.BD!.BuscarObjetosIntAndInt<Tarifa>("CodTarifa", _tpvCFG.TarifaDefecto, "CodTienda", _tpvCFG.CodTienda)[0];
             }
+        }
+
+        public List<Tarifa> ListaTarifas()
+        {
+            List<Tarifa> _listarifa = new List<Tarifa>();
+            _listarifa = ControladorComun.BD!.BuscarObjetosInt<Tarifa>("CodTienda", _tpvCFG.CodTienda).ToList();
+            return _listarifa;
         }
 
         private void CargarSecciones()
@@ -112,10 +130,18 @@ namespace TPV_WINDOWS.Controlador
             {
                 _secciones = new List<Seccion>();
                 _secciones.Add(new Seccion(0, 0, "Auriculares", 0));
-                AgregarProductoASeccion(_productos[0], 0);
-                ControladorComun.BD!.PersistirObjeto(_secciones[0]);
-                
-                ControladorComun.BD!.PersistirObjeto(new Seccion(1,1, "DACs", 0));
+                _secciones[0].AddProducto(_productos![0]);
+                _secciones[0].AddProducto(_productos![1]);
+
+
+                _secciones.Add(new Seccion(1,1, "DACs", 0));
+                _secciones[1].AddProducto(_productos![2]);
+                _secciones[1].AddProducto(_productos![3]);
+
+                foreach (Seccion s in _secciones)
+                {
+                    ControladorComun.BD!.PersistirObjeto(s);
+                }
             }
             _secciones = ControladorComun.BD!.BuscarObjetosInt<Seccion>("CodTienda", _tpvCFG.CodTienda).ToList();
         }
@@ -126,7 +152,13 @@ namespace TPV_WINDOWS.Controlador
         {
             if (ControladorComun.BD!.ContarObjetos<Producto>() < 1)
             {
-                ControladorComun.BD!.PersistirObjeto(new Producto(0,0,"Stax SR-507","Auricular electrostático", _tpvCFG.CodTienda,new BitmapImage(new Uri($"{AppDomain.CurrentDomain.BaseDirectory}Recursos\\Imagenes\\sr507.png"))));   
+                ControladorComun.BD!.PersistirObjeto(new Producto(0,0,"Stax SR-507","Auricular electrostático", _tpvCFG.CodTienda,new BitmapImage(new Uri($"{AppDomain.CurrentDomain.BaseDirectory}Recursos\\Imagenes\\sr507.png"))));
+                ControladorComun.BD!.PersistirObjeto(new Producto(1, "Audeze LCD2", "Auricular magnetoplanar", _tpvCFG.CodTienda, new BitmapImage(new Uri($"{AppDomain.CurrentDomain.BaseDirectory}Recursos\\Imagenes\\lcd2.png"))));
+                //Uri resourceUri = new Uri("pack://application:,,,/Recursos/Imagenes/pngegg48_.png", UriKind.Absolute);
+                Uri resourceUri = new Uri("pack://application:,,,/ReferencedAssembly;component/Recursos/Imagenes/pngegg48_.png", UriKind.Absolute);
+                //Uri prueba = new Uri(ResourceDictionaryLocation);
+                ControladorComun.BD!.PersistirObjeto(new Producto(2, "Cayin RU-6", "DAC portátil R2R", _tpvCFG.CodTienda, new BitmapImage(resourceUri)));
+                ControladorComun.BD!.PersistirObjeto(new Producto(3, "Topping E30", "DAC estacionario Delta-Sigma", _tpvCFG.CodTienda, new BitmapImage(new Uri($"{AppDomain.CurrentDomain.BaseDirectory}Recursos\\Imagenes\\lcd2.png"))));
             }
             _productos = ControladorComun.BD!.BuscarObjetosInt<Producto>("CodTienda", _tpvCFG.CodTienda).ToList();
         }
@@ -226,7 +258,7 @@ namespace TPV_WINDOWS.Controlador
         }
         public void AgregarProductoASeccion(Producto producto, int CodSeccion)
         {
-            Seccion seccion = _secciones?.FirstOrDefault(s => s.CodSeccion == CodSeccion);
+            Seccion seccion = _secciones?.FirstOrDefault(s => s.CodSeccion == CodSeccion)!;
             if (seccion != null)
             {
                 seccion.AddProducto(producto);
@@ -235,11 +267,19 @@ namespace TPV_WINDOWS.Controlador
         }
         public void AgregarProductoASeccion(int CodSeccion, int CodProducto)
         {
-            Seccion seccion = _secciones?.FirstOrDefault(s => s.CodSeccion == CodSeccion);
+            Seccion seccion = _secciones?.FirstOrDefault(s => s.CodSeccion == CodSeccion)!;
             if (seccion != null)
             {
                 seccion.AddProducto(ControladorComun.BD!.BuscarObjetosInt<Producto>("CodProducto", CodProducto)[0]);
                 ControladorComun.BD!.PersistirObjeto(seccion);
+            }
+        }
+
+        public void InsertarLineaVenta(Producto producto)
+        {
+            if (_posicionVentaActual != null)
+            {
+                _posicionVentaActual = new PosicionVenta(0, 0, _tarifaActual!.CodTarifa);
             }
         }
     }

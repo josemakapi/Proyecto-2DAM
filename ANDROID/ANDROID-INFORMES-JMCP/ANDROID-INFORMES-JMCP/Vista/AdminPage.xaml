@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ANDROID_INFORMES_JMCP.Vista.AdminPage"
+             x:Name="shellAdmin"
+             BackgroundImageSource="{DynamicResource imagenFondo}">
+    <Grid RowDefinitions="Auto,*">
+        
+        <Grid Grid.Row="0" RowDefinitions="*,*,*" ColumnDefinitions="Auto,*,*" BackgroundColor="{DynamicResource HeaderColor}">
+            
+            <Image Source="settings.png" WidthRequest="80" InputTransparent="True" HeightRequest="80" Margin="20,20,20,20" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start"/>
+            <Label Margin="20,20,20,0"
+                Text="{DynamicResource headerAdminText}" TextColor="{DynamicResource HeaderColorText}"
+                FontFamily="grafiti2" FontSize="33" 
+                HorizontalOptions="Start" Grid.Row="0" Grid.Column="1"
+                BackgroundColor="Transparent"/>
+            <Button ImageSource="logout_app.png" HorizontalOptions="EndAndExpand" SemanticProperties.Description="{DynamicResource exitApp}" ToolTipProperties.Text="Salir de UrbeXPlorer"
+                Clicked="Button_Clicked" Margin="0,0,20,0" Grid.Row="0" Grid.Column="2" WidthRequest="64" HeightRequest="64" Style="{DynamicResource btnSalirStyle}"/>
+            
+        </Grid>
+        
+        <ScrollView Grid.Row="1" x:Name="scrollBusquedasG" VerticalScrollBarVisibility="Always" VerticalOptions="FillAndExpand">
+
+                
+                <Grid Row="0" RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*,*" Margin="80,10,0,0" HorizontalOptions="Center" RowSpacing="10">
+                    <Label Grid.Row="0" Grid.ColumnSpan="2" Text="Selecciona un usuario con el que operar:" Margin="0,0,0,20" HorizontalOptions="Center"></Label>
+                    <Label Grid.Row="1" Grid.Column="0" WidthRequest="120" HeightRequest="40" VerticalTextAlignment="Center" Text="Usuario: " ></Label>
+                    <Picker Grid.Row="1" Grid.Column="1" WidthRequest="150" HeightRequest="20" HorizontalOptions="Start" VerticalOptions="Center" x:Name="pkUser"></Picker>
+                    <Button Grid.Row="2" Grid.Column="0" WidthRequest="120" Clicked="btnBorraUser_Clicked" Margin="0,20,0,0" x:Name="btnBorraUser" Text="Borrar" Style="{DynamicResource btnSolidStyle}"></Button>
+                    <Button Grid.Row="2" Grid.Column="1" WidthRequest="150" Clicked="btnElevaUser_Clicked" Margin="10,20,0,0" x:Name="btnElevaUser" Style="{DynamicResource btnSolidStyle}" Text="Hacer admin"></Button>
+                
+                </Grid>
+
+        </ScrollView>
+    </Grid>
+</ContentPage>

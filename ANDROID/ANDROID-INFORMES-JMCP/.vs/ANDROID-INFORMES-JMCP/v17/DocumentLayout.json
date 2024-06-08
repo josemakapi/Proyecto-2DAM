@@ -3,16 +3,136 @@
   "WorkspaceRootPath": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\android-informes-jmcp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\android-informes-jmcp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\vista\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\vista\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\vista\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\vista\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\modelo\\busqueda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\modelo\\busqueda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\modelo\\lugar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\modelo\\lugar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\modelo\\loggeduserprops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\modelo\\loggeduserprops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\controlador\\controladorcomun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\controlador\\controladorcomun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\datos\\bdmongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\datos\\bdmongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\modelo\\noticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\modelo\\noticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\vista\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\vista\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\vista\\aboutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\vista\\aboutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\strings\\castellano.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\strings\\castellano.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\strings\\castellano.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\strings\\castellano.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\strings\\english.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\strings\\english.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\strings\\english.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\strings\\english.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\styles\\smallfontsmode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\styles\\smallfontsmode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\styles\\smallfontsmode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\styles\\smallfontsmode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\styles\\bigfontsmode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\styles\\bigfontsmode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\styles\\bigfontsmode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\styles\\bigfontsmode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\themes\\temaac.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\themes\\temaac.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\themes\\temaac.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\themes\\temaac.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\themes\\originaltheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\themes\\originaltheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\resources\\themes\\originaltheme.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\resources\\themes\\originaltheme.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\android-informes-jmcp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\android-informes-jmcp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|c:\\proyecto 2dam\\android\\android-informes-jmcp\\android-informes-jmcp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1E5D10-1165-41DB-B6B8-E8D0B7CEDFE7}|ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj|solutionrelative:android-informes-jmcp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,21 +153,415 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\MainPage.xaml.cs",
-              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Title": "ANDROID-INFORMES-JMCP",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-06T17:12:17.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Lugar.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Modelo\\Lugar.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Modelo\\Lugar.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Modelo\\Lugar.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Modelo\\Lugar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T20:31:46.267Z",
+              "WhenOpened": "2024-06-06T16:43:11.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "English.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Strings\\English.xaml.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Strings\\English.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Strings\\English.xaml.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Strings\\English.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:40:11.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "English.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Strings\\English.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Strings\\English.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Strings\\English.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Strings\\English.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:40:00.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Castellano.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Strings\\Castellano.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Strings\\Castellano.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Strings\\Castellano.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Strings\\Castellano.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:39:53.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\Styles.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\Styles.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:39:38.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ControladorComun.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Controlador\\ControladorComun.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Controlador\\ControladorComun.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Controlador\\ControladorComun.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Controlador\\ControladorComun.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:17:32.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Busqueda.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Modelo\\Busqueda.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Modelo\\Busqueda.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Modelo\\Busqueda.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Modelo\\Busqueda.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:35:58.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoggedUserProps.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Modelo\\LoggedUserProps.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Modelo\\LoggedUserProps.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Modelo\\LoggedUserProps.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Modelo\\LoggedUserProps.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:36:06.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminPage.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Vista\\AdminPage.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Vista\\AdminPage.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Vista\\AdminPage.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Vista\\AdminPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:30:23.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AdminPage.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Vista\\AdminPage.xaml.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Vista\\AdminPage.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Vista\\AdminPage.xaml.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Vista\\AdminPage.xaml.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwEgAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:30:36.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Castellano.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Strings\\Castellano.xaml.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Strings\\Castellano.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Strings\\Castellano.xaml.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Strings\\Castellano.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:40:20.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Noticia.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Modelo\\Noticia.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Modelo\\Noticia.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Modelo\\Noticia.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Modelo\\Noticia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:43:04.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SmallFontsMode.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\SmallFontsMode.xaml.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\SmallFontsMode.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\SmallFontsMode.xaml.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\SmallFontsMode.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:39:29.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SmallFontsMode.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\SmallFontsMode.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\SmallFontsMode.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\SmallFontsMode.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\SmallFontsMode.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:39:17.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\Colors.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:38:59.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BigFontsMode.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\BigFontsMode.xaml.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\BigFontsMode.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\BigFontsMode.xaml.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\BigFontsMode.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:38:51.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BDMongo.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Datos\\BDMongo.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Datos\\BDMongo.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Datos\\BDMongo.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Datos\\BDMongo.cs",
+              "ViewState": "AQIAACMBAAAAAAAAAAAAAAAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:28:47.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BigFontsMode.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\BigFontsMode.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\BigFontsMode.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Styles\\BigFontsMode.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Styles\\BigFontsMode.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:38:45.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TemaAC.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Themes\\TemaAC.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Themes\\TemaAC.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Themes\\TemaAC.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Themes\\TemaAC.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:38:24.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TemaAC.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Themes\\TemaAC.xaml.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Themes\\TemaAC.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Themes\\TemaAC.xaml.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Themes\\TemaAC.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:38:01.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OriginalTheme.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Themes\\OriginalTheme.xaml.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Themes\\OriginalTheme.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Themes\\OriginalTheme.xaml.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Themes\\OriginalTheme.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:37:03.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OriginalTheme.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Themes\\OriginalTheme.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Resources\\Themes\\OriginalTheme.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Resources\\Themes\\OriginalTheme.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Resources\\Themes\\OriginalTheme.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:36:51.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MainApplication.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Platforms\\Android\\MainApplication.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Platforms\\Android\\MainApplication.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Platforms\\Android\\MainApplication.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Platforms\\Android\\MainApplication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:35:40.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Platforms\\Android\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-06-06T16:33:46.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AboutPage.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Vista\\AboutPage.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Vista\\AboutPage.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Vista\\AboutPage.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Vista\\AboutPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:33:06.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AboutPage.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Vista\\AboutPage.xaml.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\Vista\\AboutPage.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\Vista\\AboutPage.xaml.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\Vista\\AboutPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:32:49.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\MauiProgram.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\MauiProgram.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:18:16.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\AppShell.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\AppShell.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\AppShell.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:22:55.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\AppShell.xaml.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:19:39.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\App.xaml",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\App.xaml",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\App.xaml",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T16:18:40.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\MainPage.xaml.cs",
+              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T20:31:46.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\MainPage.xaml",
               "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\MainPage.xaml",
@@ -55,20 +569,7 @@
               "RelativeToolTip": "ANDROID-INFORMES-JMCP\\MainPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-18T20:31:49.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ANDROID-INFORMES-JMCP",
-              "DocumentMoniker": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj",
-              "RelativeDocumentMoniker": "ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj",
-              "ToolTip": "C:\\Proyecto 2DAM\\ANDROID\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj",
-              "RelativeToolTip": "ANDROID-INFORMES-JMCP\\ANDROID-INFORMES-JMCP.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-18T20:29:19.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T20:31:49.858Z"
             }
           ]
         }
