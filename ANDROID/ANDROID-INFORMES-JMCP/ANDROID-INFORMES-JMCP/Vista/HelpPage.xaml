@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UrbeXPlorer.Vista.HelpPage"
+             BackgroundImageSource="{DynamicResource imagenFondo}"
+             x:Name="shellAyuda">
+    <Grid RowDefinitions="Auto,*">
+        
+        <Grid Grid.Row="0" RowDefinitions="*,*,*" ColumnDefinitions="Auto,*,*" BackgroundColor="{DynamicResource HeaderColor}">
+            <Image Source="helppage.png" WidthRequest="80" InputTransparent="True" HeightRequest="80" Margin="20,20,20,20" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" SemanticProperties.Hint="Página de ayuda de UrbeXPlorer"/>
+            <Label Margin="20,20,20,0"
+                Text="{DynamicResource headerHelpText}" TextColor="{DynamicResource HeaderColorText}"
+                FontFamily="grafiti2" FontSize="33" 
+                HorizontalOptions="Start" Grid.Row="0" Grid.Column="1"
+                BackgroundColor="Transparent"/>
+            <Button ImageSource="logout_app.png" HorizontalOptions="EndAndExpand" SemanticProperties.Description="Salir de UrbeXPlorer" ToolTipProperties.Text="Salir de UrbeXPlorer"
+                Clicked="Button_Clicked" Margin="0,0,20,0" Grid.Row="0" Grid.Column="2" WidthRequest="64" HeightRequest="64" Style="{DynamicResource btnSalirStyle}"/>
+        </Grid>
+        <ScrollView Grid.Row="1">
+            <Grid Margin="80,0,80,40" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+                <Frame Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Start" BackgroundColor="{DynamicResource ColorFondoFrame}"  BorderColor="{DynamicResource ColorBordeFrame}"  Margin="0,40,0,90">
+                    <Label FontSize="Header" FontFamily="grafiti2" HorizontalOptions="Center" Text="¡Bienvenido a UrbeXPlorer!" SemanticProperties.Hint="¡Bienvenido a UrbeXPlorer!"/>
+                </Frame>
+                
+                <Label Grid.Row="1" FontSize="16" FontFamily="Roboto-Black" Margin="0,0,0,20" HorizontalOptions="Start" Text="El objetivo de este programa es que puedas encontrar lugares abandonados para explorer con mayor facilidad" />
+                <Label Grid.Row="2" FontSize="Subtitle" FontFamily="Roboto-Black" Margin="0,0,0,20" HorizontalOptions="Start" Text="¿Cómo se logra esto?" SemanticProperties.HeadingLevel="Level1"/>
+                <Label Grid.Row="3" FontSize="Body" FontFamily="Roboto-Medium" Margin="0,0,0,20" HorizontalOptions="Start" Text="El programa te propone 3 pasos:"/>
+                <Label Grid.Row="4" FontSize="Body" FontFamily="Roboto-Black" Margin="0,0,0,5" HorizontalOptions="Start" Text="1º: Búsqueda de noticias" SemanticProperties.HeadingLevel="Level2"/>
+                <Label Grid.Row="5" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="En este paso, al introducir la palabra de búsqueda (tal como 'urbex','abandonado','lugar clausurado'... el programa buscará en periódicos noticias relacionadas con la(s) palabra(s) introducida(s)"/>
+                <Label Grid.Row="6" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="Si tienes configurado el idioma en Español, la búsqueda se hará en noticias sólamente dentro de España. Si quieres acotar más tu búsqueda, puedes hacerlo marcando la opción 'Buscar sólo en mi provincia'. Como te explicaré más adelante, cuando te das de alta es una de las opciones a configurar."/>
+                <Label Grid.Row="7" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="Si tienes configurado el inglés como tu idioma, las búsquedas se realizarán en toda la prensa del mundo, aunque también tienes la opción de marcar sólo en tu provincia, es posible que haya alguna noticia de tu provinciaque haya recogido algún periódico extranjero"/>
+                <Label Grid.Row="8" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,20" HorizontalOptions="Start" Text="En todo momento tendrás la posibilidad de abrir el enlace en un navegador haciendo click en la noticia. Si te interesa y quieres investigarla, puedes hacer click en el botón de Agregar a mis búsquedas guardadas (a modo de favoritos) y avanzarás al siguiente paso:"/>
+                <Label Grid.Row="9" FontSize="Body" FontFamily="Roboto-Black" Margin="0,0,0,5" HorizontalOptions="Start" Text="2º: Revisión de Búsquedas guardadas" SemanticProperties.HeadingLevel="Level3"/>
+                <Label Grid.Row="10" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="En este paso, con las búsquedas que te han suscitado más interés podrás mirarlas, y si te interesan, decirme dónde está ubicada aproximadamente, mediante el botón 'Asignar municipio'. Si no te interesa, la puedes borrar."/>
+                <Label Grid.Row="11" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,20" HorizontalOptions="Start" Text="Si la agregas a 'Mis lugares' tendrás más posibilidades que veremos a continuación:"/>
+                <Label Grid.Row="12" FontSize="Body" FontFamily="Roboto-Black" Margin="0,0,0,5" HorizontalOptions="Start" Text="3º: Gestión de Mis lugares" SemanticProperties.HeadingLevel="Level3"/>
+                <Label Grid.Row="13" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="En este paso puedes examinar más detenidamente el lugar y hacer anotaciones, así como precisar la ubicación y verla en un mapa."/>
+                <Label Grid.Row="14" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,20" HorizontalOptions="Start" Text="Esperamos que con esta aplicación te facilite la labor de encontrar lugares para explorar. ¡Buen urbex!"/>
+                <Label Grid.Row="15" FontSize="Subtitle"  FontFamily="Roboto-Black" Margin="0,0,0,20" HorizontalOptions="Start" Text="¿Cómo funciona la gestión de usuarios?" SemanticProperties.HeadingLevel="Level1"/>
+                <Label Grid.Row="16" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="Cuando recibas tu copia de UrbeXPlorer te aparecerá un mensaje de bienvenida y te propondrá crear un nuevo usuario."/>
+                <Label Grid.Row="17" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="No te preocupes, te llevará hasta la pantalla de registro, dondé deberás proporcionar los siguientes datos:"/>
+                <Label Grid.Row="18" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="* Nombre de usuario"/>
+                <Label Grid.Row="19" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="* Contraseña"/>
+                <Label Grid.Row="20" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="* Tu provincia, donde realizarás urbex"/>
+                <Label Grid.Row="21" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="* Tema visual. Hemos dedicado atención a que UrbeXPlorer sea agradable y fácil de usar, y esperamos que te guste"/>
+                <Label Grid.Row="22" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="* Idioma de las búsquedas. También la interfaz te aparecerá en el idioma selecionado. Recuérda cómo afecta esto también a la búsqueda de lugares"/>
+                <Label Grid.Row="23" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,15" HorizontalOptions="Start" Text="* Tamaño de letra. Tenemos una opción de letra grande para que sea más legible si te resulta pequeña la que viene predefinida"/>
+                <Label Grid.Row="24" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="Una vez dado de alta, el primer usuario es administrador. ¿Qué significa esto?"/>
+                <Label Grid.Row="25" FontSize="Body" FontFamily="Roboto-Medium" Margin="10,0,0,5" HorizontalOptions="Start" Text="Quiere decir que dispondrás de una pestaña adicional llamada dentro de las opciones llamada Admin mode, en la que podrás hacer administradores a otros usuarios que no lo son ó eliminarlos. Los usuarios administradores no es posible eliminarlos. Los usuarios normales no tienen acceso a este apartado."/>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

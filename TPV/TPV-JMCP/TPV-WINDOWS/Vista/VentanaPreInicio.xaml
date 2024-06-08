@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TPV_WINDOWS.Vista"
         mc:Ignorable="d"
         Title="VentanaPreInicio" Height="450" Width="800" Closing="Window_Closing">
-    <Grid Margin="1,0,-1,0">
+    <Grid Margin="1,0,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="27*"/>
             <ColumnDefinition Width="773*"/>

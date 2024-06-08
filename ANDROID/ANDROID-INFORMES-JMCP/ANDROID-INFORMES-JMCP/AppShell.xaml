@@ -4,12 +4,54 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ANDROID_INFORMES_JMCP"
+    xmlns:vista="clr-namespace:ANDROID_INFORMES_JMCP.Vista"
     Shell.FlyoutBehavior="Disabled"
+    FlyoutHeaderBehavior="CollapseOnScroll"
+    HeightRequest="768" WidthRequest="1024"
+    x:Name="shellEstructuraNavegacion"
     Title="ANDROID_INFORMES_JMCP">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout>
+            <Image Source="logo_jmcp.jpg" WidthRequest="250" HeightRequest="250" SemanticProperties.Hint="Logo de la aplicación"/>
+            <Label x:Name="lblName" HorizontalOptions="Center" Margin="0,0,0,10"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
+    <ShellContent x:Name="loginSC"/>
+
+    <FlyoutItem x:Name="noticiasFy" Title="{DynamicResource headerSearchText}" Icon="lupa.png">
+        <ShellContent Icon="exitApp.svg" ContentTemplate="{DataTemplate vista:BuscarLugares}" SemanticProperties.Description="Buscar noticias"/>
+    </FlyoutItem>
+
+    <FlyoutItem x:Name="busquedasFy" Title="{DynamicResource headerBusquedasGuardadas}" Icon="news.png">
+        <ShellContent Icon="news.png" ContentTemplate="{DataTemplate vista:BusquedasGuardadas}" SemanticProperties.Description="Mis búsquedas guardadas"/>
+    </FlyoutItem>
+
+    <FlyoutItem x:Name="pendingFy" Title="{DynamicResource headerMisLugaresText}" Icon="pending_map.png">
+        <ShellContent Icon="pending_map.png" ContentTemplate="{DataTemplate vista:MisLugares}"/>
+    </FlyoutItem>
+
+    <FlyoutItem x:Name="configFy" Title="{DynamicResource headerConfigText}" Icon="settings.png">
+        <Tab Title="{DynamicResource headerConfigText}">
+            <ShellContent Icon="settings.png" ContentTemplate="{DataTemplate vista:ConfigPage}"/>
+        </Tab>
+        <Tab Title="{DynamicResource headerAdminText}" x:Name="TabAdmin" IsVisible="False">
+            <ShellContent Icon="settings.png" ContentTemplate="{DataTemplate vista:AdminPage}"/>
+        </Tab>
+    </FlyoutItem>
+
+    <Shell.ToolbarItems>
+        <ToolbarItem Text="{DynamicResource headerHelpText}" IconImageSource="helppage.png" Order="Primary" Clicked="ToolbarItem_Clicked_Help"/>
+        <ToolbarItem Text="{DynamicResource headerAboutText}"  IconImageSource="about.png" Order="Primary" Clicked="ToolbarItem_Clicked"/>
+    </Shell.ToolbarItems>
+
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout IsVisible="False" x:Name="footAdmin">
+            <Image Source="adminmode.png" WidthRequest="100" HeightRequest="100" VerticalOptions="Start" HorizontalOptions="Center" SemanticProperties.Description="El modo admin está habilitado"/>
+            <Label Text="Admin mode enabled" HorizontalOptions="Center" TextColor="DarkRed" Margin="0,5,0,5"/>
+        </VerticalStackLayout>
+
+    </Shell.FlyoutFooter>
 
 </Shell>

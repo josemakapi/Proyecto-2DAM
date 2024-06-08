@@ -10,6 +10,9 @@
     <Compile Update="Vista\VentanaAcciones.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Vista\VentanaCierreCaja.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Vista\VentanaEncargado.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,6 +20,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Vista\VentanaPrincipal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vista\VentanaTarifa.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Vista\VentanaTecladoNumericoUsuario.xaml.cs">
@@ -27,6 +33,9 @@
     <Page Update="Vista\VentanaAcciones.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Vista\VentanaCierreCaja.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Vista\VentanaEncargado.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -34,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\VentanaPrincipal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vista\VentanaTarifa.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\VentanaTecladoNumericoUsuario.xaml">

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UrbeXPlorer.Vista.LoginPage"
+             BackgroundImageSource="{DynamicResource imagenFondo}"
+             x:Name="loginShell">
+
+    <FlyoutBase.ContextFlyout>
+        <MenuFlyout>
+            <MenuFlyoutItem x:Name="Contextual" Text="Cambiar a tema Alto Contraste" Clicked="ItemTema_Clicked">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Ctrl" Key="A"/>
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
+        </MenuFlyout>
+    </FlyoutBase.ContextFlyout>
+
+    <Grid RowDefinitions="Auto,Auto,Auto,*">
+
+        <Label Grid.Row="0" BackgroundColor="Transparent" Text="UrbeXPlorer" HorizontalOptions="Center" Padding="20,0,0,20" FontFamily="grafiti2" FontSize="60"></Label>
+        <Image Grid.Row="1" Source="portada.gif" HeightRequest="270" InputTransparent="True" WidthRequest="480" Margin="0,0,0,10" Aspect="Center"></Image>
+
+        <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="Auto,Auto,Auto" HorizontalOptions="Center" Grid.Row="2">
+            
+            <HorizontalStackLayout>
+                <Entry x:Name="txtUser" Grid.Row="0" WidthRequest="250" HeightRequest="10" Placeholder="Usuario" Text=""  ToolTipProperties.Text="Escribe aquí tu nombre de usuario"
+                VerticalOptions="End" IsTextPredictionEnabled="True" Margin="5" Grid.ColumnSpan="2"></Entry>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Grid.Row="1">
+                <Entry x:Name="txtPass" WidthRequest="250" IsPassword="True" HeightRequest="10" Placeholder="Contraseña" Text="" ToolTipProperties.Text="Escribe aquí tu contraseña"></Entry>
+                <Button x:Name="btnMostrar"  ImageSource="eye_pass_tiny.png" HeightRequest="40" Pressed="btnMostrar_Pressed" Released="btnMostrar_Released" BackgroundColor="{DynamicResource ColorBotonTraslucido}" ToolTipProperties.Text="Mostrar contraseña"></Button>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Grid.Row="2" VerticalOptions="Start" HorizontalOptions="Center">
+                <Button x:Name="btnConectar" Clicked="btnConectar_Clicked" Text="Conectar" WidthRequest="100" Margin="10,30,10,0" Style="{DynamicResource btnTraslucidStyle}"></Button>
+                <Button x:Name="btnCancelar" Text="Cancelar" WidthRequest="100" Margin="10,30,10,0" Clicked="btnCancelar_Clicked" Style="{DynamicResource btnTraslucidStyle}"></Button>
+            </HorizontalStackLayout>
+            
+        </Grid>
+        
+        <HorizontalStackLayout Grid.Row="3" BackgroundColor="Transparent" VerticalOptions="End" HorizontalOptions="Center" Margin="0,10,0,0">
+            <Label Text="¿Todavía sin registrar?" WidthRequest="150" Margin="5,5,5,40" VerticalTextAlignment="Center"></Label>
+            <Button x:Name="btnRegistrar" Text="¡Regístrate!" WidthRequest="100" Margin="5,5,5,40" Clicked="btnRegistrar_Clicked" Style="{DynamicResource btnSolidStyle}"></Button>
+        </HorizontalStackLayout>
+        
+    </Grid>
+</ContentPage>

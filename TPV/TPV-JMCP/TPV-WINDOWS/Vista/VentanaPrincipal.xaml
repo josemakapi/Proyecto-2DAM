@@ -26,7 +26,7 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </TabControl.RenderTransform>
-            <TabItem x:Name="tab1" Header="Auriculares">
+            <TabItem x:Name="tab1" Header="Muestra estática">
                 <Grid x:Name="gridProductos"  Background="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center" Width="693" Height="692">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="98"/>
@@ -97,12 +97,6 @@
                     <Image x:Name="imgfil6col6" Source="/Recursos/Imagenes/pngegg48_.png" Width="98" Height="98" Grid.Row="6" Grid.Column="6"/>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tab2" Header="Amplificadores" HorizontalAlignment="Left" Margin="0,0,0,0" Width="95">
-                <Grid Background="#FFE5E5E5" Margin="0,0,-6,0"/>
-            </TabItem>
-            <TabItem x:Name="tab3" Header="DACs"/>
-            <TabItem Header="Accesorios"/>
-            <TabItem Header="Ofertas/descuentos"/>
         </TabControl>
         <Label Content="Producto" HorizontalAlignment="Left" Margin="712,2,0,0" VerticalAlignment="Top"/>
         <Label Content="Precio" HorizontalAlignment="Left" Margin="907,2,0,0" VerticalAlignment="Top"/>

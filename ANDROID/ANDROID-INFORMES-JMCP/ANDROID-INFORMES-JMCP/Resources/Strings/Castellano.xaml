@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ANDROID_INFORMES_JMCP.Resources.Strings.Castellano">
+    <x:String x:Key="headerConfigText">Ajustes</x:String>
+    <x:String x:Key="headerHelpText">Manual de usuario</x:String>
+    <x:String x:Key="headerAboutText">Sobre UrbeXPlorer</x:String>
+    <x:String x:Key="headerMisLugaresText">Mis lugares</x:String>
+    <x:String x:Key="headerAdminText">Modo admin</x:String>
+    <x:String x:Key="headerBusquedasGuardadas">Búsquedas guardadas</x:String>
+    <x:String x:Key="headerSearchText">Buscar lugares</x:String>
+    <x:String x:Key="headerRegisterText">Registro</x:String>
+    <x:String x:Key="temaOriginalName">Original (recomendado)</x:String>
+    <x:String x:Key="temaACName">Alto contraste</x:String>
+    <x:String x:Key="tamLetraBig">Grande</x:String>
+    <x:String x:Key="tamLetraSmall">Pequeña</x:String>
+    <x:String x:Key="idiomaCastellano">Castellano</x:String>
+    <x:String x:Key="idiomaEnglish">Inglés</x:String>
+    <x:String x:Key="optProvincia">Provincia principal:</x:String>
+    <x:String x:Key="optIdioma">Idioma de búsqueda: </x:String>
+    <x:String x:Key="optVisualTheme">Tema visual: </x:String>
+    <x:String x:Key="optFontSize">Tamaño de letra: </x:String>
+    <x:String x:Key="keyword">Palabra clave</x:String>
+    <x:String x:Key="search">Buscar</x:String>
+    <x:String x:Key="keySearch">Palabra clave para buscar noticias</x:String>
+    <x:String x:Key="exitApp">Salir de UrbeXPlorer</x:String>
+    <x:String x:Key="txtAbout">Esta aplicación ha sido desarrollada por Jose Manuel Calles durante el curso de 2º Desarrollo de Aplicaciones Multiplataforma en el instituto CIFP nº1 de Cuenca, en la asignatura Desarrollo de Interfaces. Para contactar con el autor, por favor dirígete a josemankapi@hotmail.com</x:String>
+    <x:String x:Key="buscaProv">Buscar sólo en mi provincia</x:String>
+    <x:String x:Key="anadeBusq">Agregar a mis búsquedas</x:String>
+    <x:String x:Key="asigMuni">Asignar Municipio</x:String>
+    <x:String x:Key="addMyPlaces">Agregar a mis lugares</x:String>
+    <x:String x:Key="borraBusc">Borrar búsqueda</x:String>
+
+</ResourceDictionary>

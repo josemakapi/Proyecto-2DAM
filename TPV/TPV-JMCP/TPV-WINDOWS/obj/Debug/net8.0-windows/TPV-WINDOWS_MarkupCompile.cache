@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\App.xaml
-5-1441673608
+7-1170722558
 
-25-1590037926
+28-430230170
 209-1881235411
-Vista\VentanaAcciones.xaml;Vista\VentanaEncargado.xaml;Vista\VentanaPreInicio.xaml;Vista\VentanaPrincipal.xaml;Vista\VentanaTecladoNumericoUsuario.xaml;
+Vista\VentanaAcciones.xaml;Vista\VentanaCierreCaja.xaml;Vista\VentanaEncargado.xaml;Vista\VentanaPreInicio.xaml;Vista\VentanaPrincipal.xaml;Vista\VentanaTarifa.xaml;Vista\VentanaTecladoNumericoUsuario.xaml;
 
 False
 

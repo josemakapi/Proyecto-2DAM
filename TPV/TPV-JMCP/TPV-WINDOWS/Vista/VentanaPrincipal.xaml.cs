@@ -24,7 +24,7 @@ namespace TPV_WINDOWS.Vista
         public VentanaPrincipal()
         {
             InitializeComponent();
-            GenerateTabItems(ControladorComun.TpvBase!.Secciones);
+            GenerarTabItems(ControladorComun.TpvBase!.Secciones!);
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -55,6 +55,18 @@ namespace TPV_WINDOWS.Vista
         {
             lblUsuario.Content = ControladorComun.TpvBase!.UsuarioActual!.Nombre;
             imgAvatar.Source = ControladorComun.TpvBase!.UsuarioActual!.Avatar;
+            if (ControladorComun.TpvBase!.UsuarioActual!.EsEncargado)
+            {
+                btnTarifa.Width = 128;
+                btnFuncEnc.Visibility = Visibility.Visible;
+                lblUsuario.Foreground = Brushes.Red;
+            }
+            else
+            {
+                btnTarifa.Width = 271;
+                btnFuncEnc.Visibility = Visibility.Collapsed;
+                lblUsuario.Foreground = Brushes.Black;
+            }
         }
 
         private void imgExit_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -69,7 +81,7 @@ namespace TPV_WINDOWS.Vista
 
         private void btnTarifa_Click(object sender, RoutedEventArgs e)
         {
-            ControladorComun.TpvBase!.InsertarProductoTest();
+            new VentanaTarifa().ShowDialog();
         }
 
         private void btnAcciones_Click(object sender, RoutedEventArgs e)
@@ -79,7 +91,7 @@ namespace TPV_WINDOWS.Vista
             ventanaAcciones.ShowDialog();
         }
 
-        public void GenerateTabItems(List<Seccion> secciones)
+        public void GenerarTabItems(List<Seccion> secciones)
         {
             foreach (Seccion seccion in secciones)
             {
@@ -93,7 +105,7 @@ namespace TPV_WINDOWS.Vista
                 gridProductos.Width = 693;
                 gridProductos.Height = 692;
 
-                int rowCount = (seccion.Productos.Count + 6) / 7; // Hallar el nº de filas
+                int rowCount = (seccion.Productos!.Count + 6) / 7; // Hallar el nº de filas
                 for (int i = 0; i < rowCount; i++)
                 {
                     gridProductos.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(98) });
@@ -110,7 +122,7 @@ namespace TPV_WINDOWS.Vista
                 {
                     for (int col = 0; col < columnCount; col++)
                     {
-                        if (productIndex < seccion.Productos.Count)
+                        if (productIndex <= seccion.Productos.Count)
                         {
                             Producto producto = seccion.Productos[productIndex];
 
@@ -120,6 +132,11 @@ namespace TPV_WINDOWS.Vista
                             image.Height = 98;
                             Grid.SetRow(image, row);
                             Grid.SetColumn(image, col);
+                            image.MouseLeftButtonDown += (sender, e) =>
+                            {
+                                ControladorComun.TpvBase!.InsertarLineaVenta(producto);
+                                MessageBox.Show("Producto añadido a la venta");
+                            };
                             gridProductos.Children.Add(image);
 
                             productIndex++;
