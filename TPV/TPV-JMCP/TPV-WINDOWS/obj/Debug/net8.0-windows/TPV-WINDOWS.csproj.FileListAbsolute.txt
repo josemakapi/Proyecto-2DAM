@@ -64,3 +64,5 @@ C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\MainWindow.g.
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaTicketPantalla.g.cs
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\VentanaTicketPantalla.baml
+C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\SubVentanaNuevoVendedor.g.cs
+C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\obj\Debug\net8.0-windows\Vista\SubVentanaNuevoVendedor.baml

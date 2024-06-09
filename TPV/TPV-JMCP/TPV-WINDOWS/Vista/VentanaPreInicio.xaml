@@ -21,7 +21,7 @@
                 <Label Content="Contraseña"  Grid.Row="0" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Margin="443,10,0,0" />
             </Grid>
         </GroupBox>
-        <CheckBox x:Name="chkNube" Content="BD en la nube" HorizontalAlignment="Left" Margin="447,159,0,0" VerticalAlignment="Top" Checked="chkNube_Checked" Unchecked="chkNube_Unchecked"/>
+        <CheckBox x:Name="chkNube" Content="BD en la nube" HorizontalAlignment="Left" Margin="447,159,0,0" VerticalAlignment="Top" IsChecked="True" Checked="chkNube_Checked" Unchecked="chkNube_Unchecked"/>
         <Button x:Name="btnConectar" Content="Conectar" HorizontalAlignment="Left" Margin="335,154,0,0" VerticalAlignment="Top" Height="25" Width="76" Click="btnConectar_Click" Grid.Column="1"/>
 
         <GroupBox x:Name="grpTienda" Header="Seleccione tienda" Margin="67,217,81,84">

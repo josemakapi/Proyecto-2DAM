@@ -45,11 +45,13 @@ namespace TPV_WINDOWS.Vista
         {
             new VentanaTicketPantalla().ShowDialog();
             //ControladorComun.TpvBase!.GeneraTicket();
+            ActualizaInfoUsuario();
         }
 
         private void btnFuncEnc_Click(object sender, RoutedEventArgs e)
         {
             new VentanaEncargado().ShowDialog();
+            ActualizaInfoUsuario();
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)
@@ -83,6 +85,7 @@ namespace TPV_WINDOWS.Vista
         private void imgAvatar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             ControladorComun.TpvBase!.BloqueaTPV();
+            ActualizaInfoUsuario();
         }
 
         private void btnTarifa_Click(object sender, RoutedEventArgs e)

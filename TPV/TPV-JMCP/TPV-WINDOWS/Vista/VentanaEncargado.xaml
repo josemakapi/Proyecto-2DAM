@@ -5,24 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TPV_WINDOWS.Vista"
         mc:Ignorable="d"
-        Title="Opciones de encargado" Height="359" Width="491" HorizontalAlignment="Center" VerticalAlignment="Center" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid Margin="0,0,0,5">
-        <Button x:Name="btnAtras" Content="Volver" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="22" Width="51" Click="btnAtras_Click"/>
-        <GroupBox Header="Operaciones de caja" Margin="36,62,0,168" HorizontalAlignment="Left" Width="157"/>
-        <Button Content="Cierre de caja" HorizontalAlignment="Left" Margin="51,95,0,0" VerticalAlignment="Top" Height="21" Width="110"/>
-        <Button Content="Salidas de caja" HorizontalAlignment="Left" Margin="51,127,0,0" VerticalAlignment="Top" Width="110"/>
-        <GroupBox Header="Ventas" Margin="36,188,0,53" HorizontalAlignment="Left" Width="157"/>
-        <Button Content="Factura nominativa" HorizontalAlignment="Left" Margin="51,216,0,0" VerticalAlignment="Top" Width="111"/>
-        <Button Content="Anulación de tickets" HorizontalAlignment="Left" Margin="51,247,0,0" VerticalAlignment="Top"/>
-        <GroupBox Header="Gestión" Margin="228,114,0,88" Width="190" Panel.ZIndex="1" HorizontalAlignment="Center">
-            <StackPanel Height="59" HorizontalAlignment="Center" Width="178">
-                <Button x:Name="btnAdmon" Content="Admon. de vendedores" HorizontalAlignment="Left" Panel.ZIndex="99" UseLayoutRounding="False" Margin="0,0,0,10" Click="btnAdmon_Click">
+        Title="Opciones de encargado" Height="273" Width="462" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center" VerticalAlignment="Center" ShowInTaskbar="False" WindowStyle="ToolWindow">
+    <Grid Margin="0,0,0,-26">
+        
+        <GroupBox Header="Ventas" HorizontalAlignment="Left" Width="190" Margin="25,26,0,0" Height="113" VerticalAlignment="Top">
+            <Grid Height="59" HorizontalAlignment="Center" Width="145">
+                <Button x:Name="btnAnulaciones" Height="30" Content="Anulación de tickets" Click="btnAnulaciones_Click" UseLayoutRounding="True" Margin="10,10,21,19"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Gestión" Margin="240,26,0,0" Width="190" Panel.ZIndex="1" HorizontalAlignment="Left" Height="113" VerticalAlignment="Top">
+            <Grid Height="73" HorizontalAlignment="Center" Width="178">
+                <Button x:Name="btnAdmon" Height="30" Content="Admon. de vendedores" HorizontalAlignment="Center" UseLayoutRounding="True" Margin="0,10,0,18" Click="btnAdmon_Click" Width="136">
 
                 </Button>
-                <Button x:Name="btnIdTPV" Content="!! Cambiar Id TPV" HorizontalAlignment="Left" Panel.ZIndex="99"/>
 
-            </StackPanel>
+            </Grid>
         </GroupBox>
-
+        <Button x:Name="btnAtras" Content="Volver" Height="30" HorizontalAlignment="Left" Margin="193,172,0,27" Width="50" Click="btnAtras_Click"/>
     </Grid>
 </Window>

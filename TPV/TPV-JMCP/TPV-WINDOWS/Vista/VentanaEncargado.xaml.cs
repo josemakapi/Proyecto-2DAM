@@ -33,5 +33,10 @@ namespace TPV_WINDOWS.Vista
         {
 
         }
+
+        private void btnAnulaciones_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

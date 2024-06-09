@@ -42,13 +42,7 @@ namespace TPV_WINDOWS.Vista
                 if (ControladorComun.IniciarBD(txtBUsuario.Text, txtBPassword.Password))
                 {
                     ControladorComun.PreInicializaTienda();
-
-                    cmbBTiendas.ItemsSource = ControladorComun.Tiendas;
-                    grpBD.Visibility = Visibility.Hidden;
-                    grpTienda.Visibility = Visibility.Visible;
-                    btnTienda.Visibility = Visibility.Visible;
-                    btnConectar.Content = "¡Conectado!";
-                    btnConectar.IsEnabled = false;
+                    OcultaControles();
                 }
                 else
                 {
@@ -60,19 +54,24 @@ namespace TPV_WINDOWS.Vista
                 if (ControladorComun.IniciarBD(txtBHost.Text, Convert.ToInt16(txtBPuerto.Text), txtBUsuario.Text, txtBPassword.Password))
                 {
                     ControladorComun.PreInicializaTienda();
-
-                    cmbBTiendas.ItemsSource = ControladorComun.Tiendas;
-                    grpBD.Visibility = Visibility.Hidden;
-                    grpTienda.Visibility = Visibility.Visible;
-                    btnTienda.Visibility = Visibility.Visible;
-                    btnConectar.Content = "¡Conectado!";
-                    btnConectar.IsEnabled = false;
+                    OcultaControles();
                 }
                 else
                 {
                     MessageBox.Show("Error al conectar a la BD. Corrija los datos e inténtelo de nuevo");
                 }
             }
+        }
+
+        private void OcultaControles()
+        {
+            cmbBTiendas.ItemsSource = ControladorComun.Tiendas;
+            grpBD.Visibility = Visibility.Hidden;
+            grpTienda.Visibility = Visibility.Visible;
+            btnTienda.Visibility = Visibility.Visible;
+            btnConectar.Content = "¡Conectado!";
+            btnConectar.IsEnabled = false;
+            chkNube.Visibility = Visibility.Hidden;
         }
 
         private void btnTienda_Click(object sender, RoutedEventArgs e)
