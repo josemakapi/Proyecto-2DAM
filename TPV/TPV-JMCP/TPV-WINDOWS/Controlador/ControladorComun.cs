@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media.Imaging;
 using TPV_WINDOWS.Datos;
 using TPV_WINDOWS.Modelo;
 using TPV_WINDOWS.Vista;
@@ -24,7 +25,16 @@ namespace TPV_WINDOWS.Controlador
         public static bool IniciarBD(string host, int puerto, string user, string pass)
         {
             BD = new BDMongo(host, puerto, user, pass);
-            if (!BD.ConectarBD("TPVJMCP"))
+            if (!BD.ConectarBDDirecta("TPVJMCP"))
+            {
+                return false;
+            }
+            return true;
+        }
+        public static bool IniciarBD(string user, string pass)
+        {
+            BD = new BDMongo(user, pass);
+            if (!BD.ConectarBDCloud("TPVJMCP"))
             {
                 return false;
             }
@@ -35,7 +45,7 @@ namespace TPV_WINDOWS.Controlador
         /// Llamado desde el botón Conectar de la ventana de PreInicio para inicializar los parámetros de la tienda
         /// </summary>
         public static void PreInicializaTienda()
-        {   
+        {
             CargarTiendas();
         }
 
@@ -50,7 +60,8 @@ namespace TPV_WINDOWS.Controlador
         {
             if (BD!.ContarObjetos<Tienda>() < 1)
             {
-                Tiendas = [new Tienda(0,0, 1, "192.168.1.200", "Tienda de audio de JMCP", 0)];
+                //Tiendas![0].Logo = new BitmapImage(new Uri("ISOLOGOJMCP64.jpg", UriKind.Relative));
+                Tiendas = new List<Tienda> { new Tienda(0, 0, 1, "192.168.1.200", "Tienda de audio de JMCP", "JMCP Audio\nNIF:99999990T", ControladorComun.DameImagen("ISOLOGOJMCP64.jpg")) };  
                 BD!.PersistirObjeto(Tiendas[0]);
             }
             else
@@ -68,12 +79,29 @@ namespace TPV_WINDOWS.Controlador
                 Application.Current.Shutdown();
             }
         }
-        
+
+        public static BitmapImage DameImagen(string nombreImagenProyecto)
+        {
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri($"pack://application:,,,/Recursos/Imagenes/{nombreImagenProyecto}");
+            bitmap.EndInit();
+            return bitmap;
+        }
+        public static BitmapImage DameImagenProducto(string nombreImagenProyecto)
+        {
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri($"pack://application:,,,/Recursos/Imagenes/Productos/{nombreImagenProyecto}");
+            bitmap.EndInit();
+            return bitmap;
+        }
+
         //public static LineaPantalla DimeUltimaLinea(List<LineaPantalla> listaLineas)
         //{
         //    List<LineaPantalla> lineas = BD!.LeerObjetosLista<LineaPantalla>(listaLineas, "NumLinea");
         //    int numLinea = lineas.Last().NumeroLinea;
-            
+
         //    return numLinea;
         //}
 

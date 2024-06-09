@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Proyecto 2DAM\TPV\TPV-JMCP\TPV-WINDOWS\App.xaml
-8236322783
+91686488325
 
-29-1313276379
+30-202834916
 209-1881235411
-MainWindow.xaml;Vista\VentanaAcciones.xaml;Vista\VentanaCierreCaja.xaml;Vista\VentanaEncargado.xaml;Vista\VentanaPreInicio.xaml;Vista\VentanaPrincipal.xaml;Vista\VentanaTarifa.xaml;Vista\VentanaTecladoNumericoUsuario.xaml;
+MainWindow.xaml;Vista\VentanaAcciones.xaml;Vista\VentanaCierreCaja.xaml;Vista\VentanaEncargado.xaml;Vista\VentanaPreInicio.xaml;Vista\VentanaPrincipal.xaml;Vista\VentanaTarifa.xaml;Vista\VentanaTecladoNumericoUsuario.xaml;Vista\VentanaTicketPantalla.xaml;
 
 False
 

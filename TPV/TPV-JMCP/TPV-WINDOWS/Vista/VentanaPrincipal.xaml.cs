@@ -25,6 +25,10 @@ namespace TPV_WINDOWS.Vista
         {
             InitializeComponent();
             GenerarTabItems(ControladorComun.TpvBase!.Secciones!);
+            tab1M.Visibility = Visibility.Collapsed;
+            gridProductos.Visibility = Visibility.Collapsed;
+            this.DataContext = ControladorComun.TpvBase;
+            tabControl.SelectedItem = tabControl.Items[1]; //Porque el 0 es la muestra estática
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -39,7 +43,8 @@ namespace TPV_WINDOWS.Vista
 
         private void btnCobrar_Click(object sender, RoutedEventArgs e)
         {
-            ControladorComun.TpvBase!.GeneraTicket();
+            new VentanaTicketPantalla().ShowDialog();
+            //ControladorComun.TpvBase!.GeneraTicket();
         }
 
         private void btnFuncEnc_Click(object sender, RoutedEventArgs e)
@@ -55,6 +60,7 @@ namespace TPV_WINDOWS.Vista
         {
             lblUsuario.Content = ControladorComun.TpvBase!.UsuarioActual!.Nombre;
             imgAvatar.Source = ControladorComun.TpvBase!.UsuarioActual!.Avatar;
+            lblTarifa.Content = ControladorComun.TpvBase!.TarifaActual!.Nombre;
             if (ControladorComun.TpvBase!.UsuarioActual!.EsEncargado)
             {
                 btnTarifa.Width = 128;
@@ -82,6 +88,7 @@ namespace TPV_WINDOWS.Vista
         private void btnTarifa_Click(object sender, RoutedEventArgs e)
         {
             new VentanaTarifa().ShowDialog();
+            ActualizaInfoUsuario();
         }
 
         private void btnAcciones_Click(object sender, RoutedEventArgs e)
@@ -138,7 +145,6 @@ namespace TPV_WINDOWS.Vista
                                 MessageBox.Show("Producto añadido a la venta");
                             };
                             gridProductos.Children.Add(image);
-
                             productIndex++;
                         }
                     }

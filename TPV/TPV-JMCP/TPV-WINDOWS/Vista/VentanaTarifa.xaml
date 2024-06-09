@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TPV_WINDOWS.Vista"
         mc:Ignorable="d"
-        Title="Seleccione tarifa" Height="301" Width="411" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False">
+        Title="Seleccione tarifa" Height="273" Width="411" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False">
     <Grid>
-        <Label Content="Por favor seleccione la tarifa:" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmbTarifa" HorizontalAlignment="Center" Margin="0,119,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Tarifa}" DisplayMemberPath="Descripcion"/>
-        <Button x:Name="btnTarifa" Content="Aceptar" HorizontalAlignment="Center" Margin="0,221,0,0" VerticalAlignment="Top" ToolTip="Aplicar tarifa" Height="22" Width="57" Click="btnTarifa_Click"/>
+        <Label Content="Por favor seleccione la tarifa:" HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbTarifa" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" Width="176" ItemsSource="{Binding Tarifa}" DisplayMemberPath="Descripcion"/>
+        <Button x:Name="btnTarifa" Content="Aceptar" HorizontalAlignment="Center" Margin="0,202,0,0" VerticalAlignment="Top" ToolTip="Aplicar tarifa" Height="22" Width="57" Click="btnTarifa_Click"/>
 
 
     </Grid>

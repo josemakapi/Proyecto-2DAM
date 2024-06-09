@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Net.Sockets;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -46,11 +48,12 @@ namespace TPV_WINDOWS.Controlador
         {
             CargarCfgTPV();
             CargarProductos();
-            CargarTarifas();   
+            CargarTarifas();
             CargarSecciones();
             CargarUsuarioPredeterminado();
             CompruebaCierreCaja();
             CompruebaAperturaCaja();
+            ControladorComun.BD!.ActualizarObjeto(ControladorComun.TiendaActual);
             if (_tpvCFG.IsTPVMaster)
             {
                 Task.Run(() =>
@@ -59,8 +62,8 @@ namespace TPV_WINDOWS.Controlador
                     _procesoMaster.Iniciar();
                 });
             }
-            
-            
+
+
             _ventanaPrincipal = new VentanaPrincipal();
             BloqueaTPV();
             _ventanaPrincipal.Show();
@@ -68,19 +71,19 @@ namespace TPV_WINDOWS.Controlador
 
         private bool CompruebaAperturaCaja()
         {
-            return true; 
+            return true;
         }
 
         private void CargarCfgTPV()
         {
             if (ControladorComun.BD!.ContarObjetos<TPV>() < 1)
             {
-                this._tpvCFG = new TPV(0,1,true,0,0);
+                this._tpvCFG = new TPV(0, 1, true, 0, 0);
                 ControladorComun.BD!.PersistirObjeto(_tpvCFG);
             }
             else
             {
-                this._tpvCFG = ControladorComun.BD!.BuscarObjetosIntAndInt<TPV>("CodTienda",ControladorComun.TiendaActual!.CodTienda,"NumTPV", _numTPV)[0];
+                this._tpvCFG = ControladorComun.BD!.BuscarObjetosIntAndInt<TPV>("CodTienda", ControladorComun.TiendaActual!.CodTienda, "NumTPV", _numTPV)[0];
             }
         }
 
@@ -88,7 +91,7 @@ namespace TPV_WINDOWS.Controlador
         {
             if (ControladorComun.BD!.ContarObjetos<Usuario>() < 1)
             {
-                ControladorComun.BD!.PersistirObjeto(new Usuario(0,"7777",0,true,"admin",new BitmapImage(new Uri("C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Recursos\\Imagenes\\profile.png"))));
+                ControladorComun.BD!.PersistirObjeto(new Usuario(0, "7777", 0, true, "admin", new BitmapImage(new Uri("C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Recursos\\Imagenes\\profile.png"))));
                 ControladorComun.BD!.PersistirObjeto(new Usuario(1, "1111", 0, false, "user", new BitmapImage(new Uri("C:\\Proyecto 2DAM\\TPV\\TPV-JMCP\\TPV-WINDOWS\\Recursos\\Imagenes\\pngegg48_.png"))));
             }
         }
@@ -97,12 +100,12 @@ namespace TPV_WINDOWS.Controlador
         {
             if (ControladorComun.BD!.ContarObjetos<Tarifa>() < 1)
             {
-                this._tarifaActual = new Tarifa(0,0,"Tarifa Base PVP", 0, 21, "PVP sin IVA incluido");
+                this._tarifaActual = new Tarifa(0, 0, "Tarifa Base PVP", 0, 21, "PVP sin IVA incluido");
                 Tarifa tarifaAlt = new Tarifa(1, "Tarifa Oferta PVP", 0, 21, "PVP Oferta sin IVA incluido");
 
-                this._tarifaActual.AnadirProducto(0, 600,true);
+                this._tarifaActual.AnadirProducto(0, 600, true);
                 tarifaAlt.AnadirProducto(0, 515, true);
-                this._tarifaActual.AnadirProducto(1, 1200,true);
+                this._tarifaActual.AnadirProducto(1, 1200, true);
                 tarifaAlt.AnadirProducto(1, 1100, true);
                 this._tarifaActual.AnadirProducto(2, 219, true);
                 tarifaAlt.AnadirProducto(2, 190, true);
@@ -114,7 +117,9 @@ namespace TPV_WINDOWS.Controlador
             else
             {
                 this._tarifaActual = ControladorComun.BD!.BuscarObjetosIntAndInt<Tarifa>("CodTarifa", _tpvCFG.TarifaDefecto, "CodTienda", _tpvCFG.CodTienda)[0];
+                ControladorComun.TiendaActual!.TarifaDefecto = _tarifaActual;
             }
+            ControladorComun.TiendaActual!.TarifaDefecto = _tarifaActual;
         }
 
         public List<Tarifa> ListaTarifas()
@@ -134,7 +139,7 @@ namespace TPV_WINDOWS.Controlador
                 _secciones[0].AddProducto(_productos![1]);
 
 
-                _secciones.Add(new Seccion(1,1, "DACs", 0));
+                _secciones.Add(new Seccion(1, 1, "DACs", 0));
                 _secciones[1].AddProducto(_productos![2]);
                 _secciones[1].AddProducto(_productos![3]);
 
@@ -152,13 +157,10 @@ namespace TPV_WINDOWS.Controlador
         {
             if (ControladorComun.BD!.ContarObjetos<Producto>() < 1)
             {
-                ControladorComun.BD!.PersistirObjeto(new Producto(0,0,"Stax SR-507","Auricular electrostático", _tpvCFG.CodTienda,new BitmapImage(new Uri($"{AppDomain.CurrentDomain.BaseDirectory}Recursos\\Imagenes\\sr507.png"))));
-                ControladorComun.BD!.PersistirObjeto(new Producto(1, "Audeze LCD2", "Auricular magnetoplanar", _tpvCFG.CodTienda, new BitmapImage(new Uri($"{AppDomain.CurrentDomain.BaseDirectory}Recursos\\Imagenes\\lcd2.png"))));
-                //Uri resourceUri = new Uri("pack://application:,,,/Recursos/Imagenes/pngegg48_.png", UriKind.Absolute);
-                Uri resourceUri = new Uri("pack://application:,,,/ReferencedAssembly;component/Recursos/Imagenes/pngegg48_.png", UriKind.Absolute);
-                //Uri prueba = new Uri(ResourceDictionaryLocation);
-                ControladorComun.BD!.PersistirObjeto(new Producto(2, "Cayin RU-6", "DAC portátil R2R", _tpvCFG.CodTienda, new BitmapImage(resourceUri)));
-                ControladorComun.BD!.PersistirObjeto(new Producto(3, "Topping E30", "DAC estacionario Delta-Sigma", _tpvCFG.CodTienda, new BitmapImage(new Uri($"{AppDomain.CurrentDomain.BaseDirectory}Recursos\\Imagenes\\lcd2.png"))));
+                ControladorComun.BD!.PersistirObjeto(new Producto(0, 0, "Stax SR-507", "Auricular electrostático", _tpvCFG.CodTienda, ControladorComun.DameImagenProducto("sr507.png")));
+                ControladorComun.BD!.PersistirObjeto(new Producto(1, "Audeze LCD2", "Auricular magnetoplanar", _tpvCFG.CodTienda, ControladorComun.DameImagenProducto("lcd2.png")));
+                ControladorComun.BD!.PersistirObjeto(new Producto(2, "Cayin RU-6", "DAC portátil R2R", _tpvCFG.CodTienda, ControladorComun.DameImagenProducto("ru6.png")));
+                ControladorComun.BD!.PersistirObjeto(new Producto(3, "Topping E30", "DAC estacionario Delta-Sigma", _tpvCFG.CodTienda, ControladorComun.DameImagenProducto("e30.jpg")));
             }
             _productos = ControladorComun.BD!.BuscarObjetosInt<Producto>("CodTienda", _tpvCFG.CodTienda).ToList();
         }
@@ -196,23 +198,9 @@ namespace TPV_WINDOWS.Controlador
             return true;
         }
 
-        public void InsertarProductoTest()
-        {     
-            //public Ticket(string numTicket, int numTPV, int ejercicio, string tienda)
-            //Ticket t1 = new Ticket('T', 1, 2024, "AudioCuenca00");
+        public void TestVariados()
+        {
             
-            //Producto prod1 = new Producto(1,"T037", 10);
-            //Producto prod2 = new Producto("T098", 20);
-            //Producto prod3 = new Producto("D87435", 30);
-            //_tarifaActual.AnadirProducto(1, 200);
-            //prod3.Descripcion = "Descripción de prueba";
-            //ControladorComun.BD!.PersistirObjeto<Producto>(prod1);
-            //ControladorComun.BD!.PersistirObjeto<Producto>(prod2);
-            //ControladorComun.BD!.PersistirObjeto<Producto>(prod3);
-            //ControladorComun.BD!.PersistirObjeto<Ticket>(t1);
-            //ControladorComun.BD!.PersistirObjeto<Tarifa>(_tarifaActual);
-            //string maxID= ControladorComun.BD!.SelectMAXTicketT(2024,1);
-            //MessageBox.Show("Hemos insertado 3 productos. El ID máximo es: " + maxID);
         }
         public bool ExistenTicketCerrados()
         {
@@ -222,7 +210,7 @@ namespace TPV_WINDOWS.Controlador
 
         public bool CompruebaClave(string clave)
         {
-            List<Usuario> usuarios = ControladorComun.BD!.BuscarObjetosStringAndInt<Usuario>("Clave", clave, "CodTienda",_tpvCFG.CodTienda).ToList();
+            List<Usuario> usuarios = ControladorComun.BD!.BuscarObjetosStringAndInt<Usuario>("Clave", clave, "CodTienda", _tpvCFG.CodTienda).ToList();
             if (usuarios.Count > 0)
             {
                 return usuarios.Any(x => x.EsActivo);
@@ -280,6 +268,57 @@ namespace TPV_WINDOWS.Controlador
             if (_posicionVentaActual != null)
             {
                 _posicionVentaActual = new PosicionVenta(0, 0, _tarifaActual!.CodTarifa);
+            }
+        }
+
+        public async Task<string> RecibirNumTicketDesdeMaster()
+        {
+            try
+            {
+                using (TcpClient client = new TcpClient(ControladorComun.TiendaActual!.IPTPVMaster, 12700))
+                {
+
+                    NetworkStream stream = client.GetStream();
+                    byte[] _claveCompartida = Encoding.UTF8.GetBytes(DateTime.Now.ToString("ddMMyyyy"));
+                    // Leer los datos cifrados del stream
+                    byte[] encryptedData = new byte[client.ReceiveBufferSize];
+                    int bytesRead = await stream.ReadAsync(encryptedData, 0, encryptedData.Length);
+
+                    // Desencriptar los datos
+                    byte[] decryptedData = DecryptData(encryptedData, _claveCompartida);
+
+                    // Convertir los datos desencriptados a string
+                    string numTicket = Encoding.UTF8.GetString(decryptedData, 0, bytesRead);
+
+                    return numTicket;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al recibir el stream desde TPVMaster: " + ex.Message);
+                return string.Empty;
+            }
+        }
+
+        private byte[] DecryptData(byte[] data, byte[] key)
+        {
+            using (Aes aesAlg = Aes.Create())
+            {
+                aesAlg.Key = key;
+                aesAlg.Mode = CipherMode.ECB;
+                aesAlg.Padding = PaddingMode.PKCS7;
+
+                ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
+
+                using (MemoryStream msDecrypt = new MemoryStream())
+                {
+                    using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Write))
+                    {
+                        csDecrypt.Write(data, 0, data.Length);
+                        csDecrypt.FlushFinalBlock();
+                        return msDecrypt.ToArray();
+                    }
+                }
             }
         }
     }

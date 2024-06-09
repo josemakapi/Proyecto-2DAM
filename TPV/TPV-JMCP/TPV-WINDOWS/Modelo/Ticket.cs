@@ -16,13 +16,17 @@ namespace TPV_WINDOWS.Modelo
         private string _numTicket;
         public string NumTicket { get { return _numTicket; } set { _numTicket = value; } }
         private char _tipo;
-        public char Tipo { get { return _tipo; } set { _tipo = value; } } //T = Ticket normal, D = Devolucion, P = Comida de personal, M = Merma
+        public char Tipo { get { return _tipo; } set { _tipo = value; } } //T = Ticket normal, D = Devolucion
         private int _numTPV;
         public int NumTPV { get { return _numTPV; } set { _numTPV = value; } }
+        private Usuario _vendedor;
+        public Usuario Vendedor { get { return _vendedor; } set { _vendedor = value; } }
         private int _ejercicio;
         public int Ejercicio { get { return _ejercicio; } set { _ejercicio = value; } }
         private string _tienda;
         public string Tienda { get { return _tienda; } set { _tienda = value; } }
+        private List<Linea> _lineasPantalla;
+        public List<Linea> LineasPantalla { get { return _lineasPantalla; } set { _lineasPantalla = value; } }
         private bool _cerrado;
         public bool Cerrado { get { return _cerrado; } set { _cerrado = value; } }
         private DateTime _fechaHoraCierre;
@@ -31,7 +35,7 @@ namespace TPV_WINDOWS.Modelo
         public Dictionary<double, FormaPago> Vencimientos { get { return _vencimientos; } set { _vencimientos = value; } }
 
 
-        public Ticket(char tipo, int numTPV, int ejercicio, string tienda)
+        public Ticket(char tipo, int numTPV, int ejercicio, string tienda, Usuario vendedor)
         {
             this._id = ControladorComun.BD!.SelectMAXInt("Ticket", "_id") + 1;
             this._fechaHora = DateTime.Now;
@@ -39,8 +43,10 @@ namespace TPV_WINDOWS.Modelo
             this._numTPV = numTPV;
             this._ejercicio = ejercicio;
             this._tienda = tienda;
-            this._numTicket = char.ToUpper(this._tipo).ToString()+this._tienda+this._id.ToString().PadLeft(8, '0');
+            this._lineasPantalla = ControladorComun.TpvBase!.PosicionVentaActual!.LineasPantalla;
+            this._numTicket = char.ToUpper(this._tipo).ToString() + this._tienda + this._id.ToString().PadLeft(8, '0');
             this._vencimientos = new Dictionary<double, FormaPago>();
+            this._vendedor = vendedor;
         }
 
 

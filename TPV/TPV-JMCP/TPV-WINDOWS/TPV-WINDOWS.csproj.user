@@ -28,6 +28,9 @@
     <Compile Update="Vista\VentanaTecladoNumericoUsuario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Vista\VentanaTicketPantalla.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Vista\VentanaAcciones.xaml">
@@ -49,6 +52,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\VentanaTecladoNumericoUsuario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vista\VentanaTicketPantalla.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

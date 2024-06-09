@@ -9,11 +9,11 @@ namespace TPV_WINDOWS.Modelo
     public class Cliente
     {
         private int _id;
-        public int Id { get { return _id; } }
+        public int Id { get => _id; set => _id = value; }
         private string _nombre;
         public string Nombre { get => _nombre; set => _nombre = value; } 
         private string _dni;
-        public string Dni { get => _dni; } 
+        public string Dni { get => _dni; set => _dni = value; }
 
         public Cliente(int id, string nombre, string dni)
         {

@@ -5,33 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TPV_WINDOWS.Vista"
         mc:Ignorable="d"
-        Title="VentanaPreInicio" Height="450" Width="800" Closing="Window_Closing">
-    <Grid Margin="1,0,0,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="27*"/>
-            <ColumnDefinition Width="773*"/>
-        </Grid.ColumnDefinitions>
-        <GroupBox x:Name="grpBD" Header="Conexión BD" Margin="67,24,94,285" Visibility="Visible" Grid.Column="1">
+        Title="Inicio TPV" Height="450" Width="800" Closing="Window_Closing" WindowStyle="ToolWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,0">
+
+        <GroupBox x:Name="grpBD" Header="Conexión BD" Margin="67,20,81,275" Visibility="Visible">
             <!--Collapsed para invisible-->
-            <Grid HorizontalAlignment="Left" Width="637" Margin="23,0,0,0">
-                <Label Content="Host" Width="80" Margin="52,14,449,62"/>
-                <TextBox x:Name="txtBHost" HorizontalAlignment="Left" Margin="52,0,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Center" Width="120"/>
-                <Label Content="Puerto" Width="80" Margin="200,14,301,62"/>
-                <TextBox x:Name="txtBPuerto" HorizontalAlignment="Left" Margin="200,0,0,0" TextWrapping="Wrap" Text="12470" VerticalAlignment="Center" Width="58"/>
-                <Label Content="Usuario" Width="80" Margin="292,14,209,62"/>
-                <TextBox x:Name="txtBUsuario" HorizontalAlignment="Left" TextWrapping="Wrap" Text="root" VerticalAlignment="Center" Width="80" Margin="293,0,0,0"/>
-                <PasswordBox x:Name="txtBPassword" HorizontalAlignment="Left" Password="nonoTiene1272" VerticalAlignment="Center" Width="127" Margin="392,0,0,0"/>
-                <Label Content="Contraseña" Width="80" Margin="392,14,109,62"/>
+            <Grid Margin="0,0,20,0">
+                <Label Content="Host" Width="40" Margin="57,10,0,0" Grid.Row="0" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtBHost" HorizontalAlignment="Left" Margin="57,0,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Center" Width="120"/>
+                <Label Content="Puerto" Margin="228,10,0,0" Grid.Row="0" Width="50" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtBPuerto" HorizontalAlignment="Left" Margin="228,0,0,0" TextWrapping="Wrap" Text="12470" VerticalAlignment="Center" Width="58"/>
+                <Label Content="Usuario"  Grid.Row="0" Width="60" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Margin="318,10,0,0"/>
+                <TextBox x:Name="txtBUsuario" HorizontalAlignment="Left" TextWrapping="Wrap" Text="josemankapi" VerticalAlignment="Center" Width="95" Margin="318,0,0,0"/>
+                <PasswordBox x:Name="txtBPassword" HorizontalAlignment="Left" Password="nonotiene-20" VerticalAlignment="Center" Width="126" Margin="443,0,0,0"/>
+                <Label Content="Contraseña"  Grid.Row="0" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Margin="443,10,0,0" />
             </Grid>
         </GroupBox>
+        <CheckBox x:Name="chkNube" Content="BD en la nube" HorizontalAlignment="Left" Margin="447,159,0,0" VerticalAlignment="Top" Checked="chkNube_Checked" Unchecked="chkNube_Unchecked"/>
         <Button x:Name="btnConectar" Content="Conectar" HorizontalAlignment="Left" Margin="335,154,0,0" VerticalAlignment="Top" Height="25" Width="76" Click="btnConectar_Click" Grid.Column="1"/>
 
-        <GroupBox x:Name="grpTienda" Header="Seleccione tienda" Margin="67,217,94,84" Grid.Column="1">
-            <Grid>
+        <GroupBox x:Name="grpTienda" Header="Seleccione tienda" Margin="67,217,81,84">
+            <Grid HorizontalAlignment="Left" Width="647">
                 <ComboBox x:Name="cmbBTiendas" Margin="186,31,188,0" VerticalAlignment="Top" ItemsSource="{Binding Tiendas}" DisplayMemberPath="Descripcion"/>
             </Grid>
         </GroupBox>
         <Button x:Name="btnTienda" Content="Confirmar tienda" HorizontalAlignment="Left" Margin="319,355,0,0" VerticalAlignment="Top" Height="25" Width="108" RenderTransformOrigin="0.472,0.602" Click="btnTienda_Click" Grid.Column="1"/>
+
 
     </Grid>
 </Window>

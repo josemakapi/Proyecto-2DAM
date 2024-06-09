@@ -10,7 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Recursos\Imagenes\ISOLOGOJMCP64.jpg" />
     <None Remove="Recursos\Imagenes\pngegg48_.png" />
+    <None Remove="Recursos\Imagenes\Productos\e30.jpg" />
+    <None Remove="Recursos\Imagenes\Productos\lcd2.png" />
+    <None Remove="Recursos\Imagenes\Productos\ru6.png" />
+    <None Remove="Recursos\Imagenes\Productos\sr507.png" />
     <None Remove="Vista\btnExit.png" />
     <None Remove="Vista\exit.png" />
     <None Remove="Vista\profile.png" />
@@ -25,9 +30,16 @@
 
   <ItemGroup>
     <Resource Include="Recursos\Imagenes\exit.png" />
+    <Resource Include="Recursos\Imagenes\ISOLOGOJMCP64.jpg" />
     <Resource Include="Recursos\Imagenes\pngegg48_.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Recursos\Imagenes\Productos\e30.jpg" />
+    <Resource Include="Recursos\Imagenes\Productos\lcd2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Recursos\Imagenes\Productos\ru6.png" />
+    <Resource Include="Recursos\Imagenes\Productos\sr507.png" />
     <Resource Include="Recursos\Imagenes\profile.png" />
     <Resource Include="Recursos\Imagenes\test2.png" />
     <Resource Include="Recursos\Imagenes\test3.jpg" />

@@ -17,17 +17,18 @@ namespace TPV_WINDOWS.Datos
     {
         private IMongoDatabase? _dbTPV;
         private MongoClient? _clienteDB;
-        private string _connectionString;
-        public string ConnectionString { get => _connectionString; set => _connectionString = value; }
-        private string _host;
+        private string? _directConnectionString;
+        private string? _cloudConnectionString;
+        public string DirectConnectionString { get => _directConnectionString; set => _directConnectionString = value; }
+        private string? _host;
         public string Host { get => _host; set => _host = value; }
 
         private int _port;
         public int Port { get => _port; set => _port = value; }
-        private string _username;
-        public string Username { get => _username; set => _username = value; }
-        private string _password;
-        public string Password { get => _password; set => _password = value; }
+        //private string _username;
+        //public string Username { get => _username; set => _username = value; }
+        //private string _password;
+        //public string Password { get => _password; set => _password = value; }
 
 
         
@@ -36,11 +37,16 @@ namespace TPV_WINDOWS.Datos
         {
             this._host = host;
             this._port = port;
-            this._username = username;
-            this._password = password;
-            this._connectionString = $"mongodb://{this._username}:{this._password}@{this._host}:{this._port}/?connectTimeoutMS=5000&socketTimeoutMS=5000&maxIdleTimeMS=5000&tls=false";
+            //this._username = username;
+            //this._password = password;
+            this._directConnectionString = $"mongodb://{username}:{password}@{this._host}:{this._port}/?connectTimeoutMS=5000&socketTimeoutMS=5000&maxIdleTimeMS=5000&tls=false";
+        }
 
-            
+        public BDMongo(string username, string password)
+        {
+            this._cloudConnectionString = $"mongodb+srv://{username}:{password}@cluster0.zxd0ycl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+            //this._username = username;
+            //this._password = password;
         }
 
         //public bool CompruebaConexionCloudTest()
@@ -62,11 +68,27 @@ namespace TPV_WINDOWS.Datos
         //    return true;
         //}
 
-        public bool ConectarBD(string dbName)
+        public bool ConectarBDCloud(string dbName)
         {
             try
             {
-                MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(this._connectionString));
+                MongoClientSettings settings = MongoClientSettings.FromConnectionString(this._cloudConnectionString);
+                settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+                this._clienteDB = new MongoClient(settings);
+                this._dbTPV = this._clienteDB.GetDatabase(dbName);
+                return IsBDConnected();
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool ConectarBDDirecta(string dbName)
+        {
+            try
+            {
+                MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(this._directConnectionString));
                 settings.UseTls= false;
                 /*
                 settings.SslSettings = new SslSettings
@@ -78,7 +100,7 @@ namespace TPV_WINDOWS.Datos
                     CheckCertificateRevocation = false
                 };
                 */
-                this._clienteDB = new MongoClient(this._connectionString);
+                this._clienteDB = new MongoClient(this._directConnectionString);
                 this._dbTPV = this._clienteDB.GetDatabase(dbName);
                 return IsBDConnected();
             }
@@ -92,7 +114,7 @@ namespace TPV_WINDOWS.Datos
         {
             try
             {
-                var result = _dbTPV!.RunCommand<BsonDocument>(new BsonDocument("ping", 1));
+                BsonDocument result = _dbTPV!.RunCommand<BsonDocument>(new BsonDocument("ping", 1));
                 return result.Contains("ok") && result["ok"].ToDouble() == 1.0;
             }
             catch (Exception)

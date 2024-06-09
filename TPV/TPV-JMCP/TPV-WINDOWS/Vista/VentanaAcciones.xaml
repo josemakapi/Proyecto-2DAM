@@ -10,7 +10,7 @@
         <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="24" Width="58" Panel.ZIndex="1" Click="btnVolver_Click"/>
         <GroupBox Header="Mi usuario" Margin="16,46,245,57" RenderTransformOrigin="0.853,1.32">
             <Grid>
-                <Button Content="Mi interfaz"  Height="32" Width="67" Panel.ZIndex="1" Margin="18,55,36,10"/>
+                <Button Content="Mi interfaz"  Height="32" Width="67" Panel.ZIndex="1" Margin="18,53,36,12"/>
                 <Button Content="Mi perfil" HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Height="32" Width="68" Panel.ZIndex="1"/>
             </Grid>
         </GroupBox>

@@ -37,20 +37,41 @@ namespace TPV_WINDOWS.Vista
 
         private void btnConectar_Click(object sender, RoutedEventArgs e)
         {
-            if (ControladorComun.IniciarBD(txtBHost.Text,Convert.ToInt16(txtBPuerto.Text),txtBUsuario.Text,txtBPassword.Password))
+            if (chkNube.IsChecked == true)
             {
-                ControladorComun.PreInicializaTienda();
-                
-                cmbBTiendas.ItemsSource = ControladorComun.Tiendas;
-                grpBD.Visibility = Visibility.Hidden;
-                grpTienda.Visibility = Visibility.Visible;
-                btnTienda.Visibility = Visibility.Visible;
-                btnConectar.Content = "¡Conectado!";
-                btnConectar.IsEnabled = false;                
+                if (ControladorComun.IniciarBD(txtBUsuario.Text, txtBPassword.Password))
+                {
+                    ControladorComun.PreInicializaTienda();
+
+                    cmbBTiendas.ItemsSource = ControladorComun.Tiendas;
+                    grpBD.Visibility = Visibility.Hidden;
+                    grpTienda.Visibility = Visibility.Visible;
+                    btnTienda.Visibility = Visibility.Visible;
+                    btnConectar.Content = "¡Conectado!";
+                    btnConectar.IsEnabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Error al conectar a la BD. Corrija los datos e inténtelo de nuevo");
+                }
             }
             else
             {
-                MessageBox.Show("Error al conectar a la BD. Corrija los datos e inténtelo de nuevo");
+                if (ControladorComun.IniciarBD(txtBHost.Text, Convert.ToInt16(txtBPuerto.Text), txtBUsuario.Text, txtBPassword.Password))
+                {
+                    ControladorComun.PreInicializaTienda();
+
+                    cmbBTiendas.ItemsSource = ControladorComun.Tiendas;
+                    grpBD.Visibility = Visibility.Hidden;
+                    grpTienda.Visibility = Visibility.Visible;
+                    btnTienda.Visibility = Visibility.Visible;
+                    btnConectar.Content = "¡Conectado!";
+                    btnConectar.IsEnabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Error al conectar a la BD. Corrija los datos e inténtelo de nuevo");
+                }
             }
         }
 
@@ -70,6 +91,30 @@ namespace TPV_WINDOWS.Vista
         private void Window_Closing(object sender, CancelEventArgs e)
         {
             ControladorComun.CargarPantallaVentas();
+        }
+
+        private void chkNube_Checked(object sender, RoutedEventArgs e)
+        {
+            chkCheck();
+        }
+
+        private void chkNube_Unchecked(object sender, RoutedEventArgs e)
+        {
+            chkCheck();
+        }
+
+        private void chkCheck()
+        {
+            if (chkNube.IsChecked == true)
+            {
+                txtBHost.IsEnabled = false;
+                txtBPuerto.IsEnabled = false;
+            }
+            else
+            {
+                txtBHost.IsEnabled = true;
+                txtBPuerto.IsEnabled = true;
+            }
         }
     }
 

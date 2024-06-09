@@ -7,16 +7,6 @@
         mc:Ignorable="d"
         Title="Pantalla de ventas" Height="768" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid Margin="3,0,-3,0">
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="700,23,0,462" SelectionChanged="ListBox_SelectionChanged" HorizontalAlignment="Left" Width="204">
-            <ListBox.Effect>
-                <DropShadowEffect/>
-            </ListBox.Effect>
-        </ListBox>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="904,23,10,462" SelectionChanged="ListBox_SelectionChanged" >
-            <ListBox.Effect>
-                <DropShadowEffect/>
-            </ListBox.Effect>
-        </ListBox>
         <TabControl x:Name="tabControl" RenderTransformOrigin="0,0" Margin="0,0,317,0">
             <TabControl.RenderTransform>
                 <TransformGroup>
@@ -26,7 +16,7 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </TabControl.RenderTransform>
-            <TabItem x:Name="tab1" Header="Muestra estática">
+            <TabItem x:Name="tab1M" Header="Muestra estática" Visibility="Collapsed">
                 <Grid x:Name="gridProductos"  Background="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center" Width="693" Height="692">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="98"/>
@@ -98,10 +88,9 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Label Content="Producto" HorizontalAlignment="Left" Margin="712,2,0,0" VerticalAlignment="Top"/>
-        <Label Content="Precio" HorizontalAlignment="Left" Margin="907,2,0,0" VerticalAlignment="Top"/>
-        <Label Content="Total:" HorizontalAlignment="Left" Margin="848,0,0,425" FontSize="20" VerticalAlignment="Bottom" RenderTransformOrigin="0.479,0.247"/>
-        <Label Content="0€" HorizontalAlignment="Right" Margin="0,0,0,425" FontSize="20" VerticalAlignment="Bottom"/>
+        <Label x:Name="lblTarifa" Content="{Binding TarifaActual.Nombre}" HorizontalAlignment="Right" Margin="0,0,186,415" VerticalAlignment="Bottom" Height="37" Width="128" Foreground="Blue"/>
+        <Label Content="Total:" HorizontalAlignment="Left" Margin="844,0,0,414" FontSize="20" VerticalAlignment="Bottom" RenderTransformOrigin="0.479,0.247"/>
+        <Label Content="0€" HorizontalAlignment="Right" Margin="0,0,9,415" FontSize="20" VerticalAlignment="Bottom"/>
         <Button x:Name="btnCobrar" Content="Cobrar" HorizontalAlignment="Left" Margin="710,357,0,0" VerticalAlignment="Top" Height="48" Width="128" Click="btnCobrar_Click" FontSize="13">
             <Button.Effect>
                 <DropShadowEffect/>
@@ -138,6 +127,13 @@
                 <DropShadowEffect/>
             </Image.Effect>
         </Image>
+        <DataGrid x:Name="dGridPosVenta" Margin="700,0,10,452">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Producto" Width="2*"/>
+                <DataGridTextColumn Header="               Precio" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+
 
     </Grid>
 </Window>
